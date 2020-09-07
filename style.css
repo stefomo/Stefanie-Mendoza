@@ -1,0 +1,634 @@
+
+/*--------------- basic styling --------------- */
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      font-family: Mabry !important;
+      background: #0f0f0f !important;
+      color: #fff !important;
+}
+
+.whitespace {
+      width: 100%;
+      height: 100px;
+}
+
+@media(max-width: 768px) {
+      .whitespace {
+            display: none;
+      }
+}
+
+@font-face {
+      src: url(fonts/MabryPro-Regular.ttf);
+      font-family: Mabry;
+}
+
+@font-face {
+      src: url(fonts/0pposit-regular.ttf);
+      font-family: opposit;
+}
+
+@font-face {
+      src: url(fonts/Opposit-SemiBold.ttf);
+      font-family: opposit-sb;
+}
+
+
+/*
+.cursor--outer {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 11000;
+}
+/* Inner Cursor Circle *
+.cursor--inner {
+  width: 4px;
+  height: 4px;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  border-radius: 50%;
+  z-index: 11000;
+  background:#D39D71;
+}
+.link {
+  cursor: none; 
+  transition: opacity 1s;
+} */
+
+/*--------------- navigation --------------- */
+nav {
+      width: 100%;
+      background: #0f0f0f;
+      position: fixed;
+      z-index: 1;
+      font-size: 17px;
+      font-family: Mabry, serif;
+
+}
+
+nav #menu {
+      float: none;
+      text-align: center;
+}
+
+nav #menu li {
+      display: inline-block;
+      margin-right: 40px;
+      cursor: pointer;
+      line-height: 80px;
+      position: relative;
+      transition: all 0.3s ease-out;
+}
+
+nav #menu li a {
+      color: #fff;
+}
+
+nav #menu li a:hover {
+      text-decoration: none;
+}
+
+.extra { 
+    float: left;
+    display: none;
+    font-family: Mabry,serif;
+    font-size: 20px;
+    color: white;
+    padding-right: 20px;
+     cursor: none; 
+    transition: opacity 1s;
+}
+.extra:hover{
+  opacity: .2;
+}
+
+li:hover .extra {
+    display: inline-block;
+}
+
+.here { 
+    float: left;
+    font-family: Mabry ,serif;
+    font-size: 20px;
+    color: white;
+    padding-right: 20px;
+}
+
+li:active .here {
+    display: inline-block;
+}
+
+
+#toggle {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      font-weight: 300;
+      z-index: 2;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      float: right;
+      transition: all 0.3s ease-out;
+      visibility: hidden;
+      opacity: 0;
+}
+
+.close-btn {
+      position: absolute;
+      right: 16px;
+      font-weight: 300;
+      z-index: 2;
+      cursor: pointer;
+      top: -2px;
+      line-height: 80px;
+}
+
+#resize {
+      z-index: 1;
+      top: 0px;
+      position: fixed;
+      background: #0f0f0f;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 1s ease-out;
+}
+
+#resize #menu {
+      height: 90px;
+      position: absolute;
+      left: 45%;
+      transform: translateX(-40%);
+      text-align: center;
+      display: table-cell;
+      vertical-align: center;
+}
+
+#resize #menu li {
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 50px;
+      min-height: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+}
+
+#resize li:nth-child(1) {
+      margin-top: 140px;
+}
+
+#resize #menu li a {
+      color: #fff;
+}
+
+#resize #menu li a:hover {
+      text-decoration: none;
+}
+
+#resize.active {
+      visibility: visible;
+      opacity: 1;
+}
+
+@media(max-width: 768px) {
+      #toggle {
+            visibility: visible;
+            opacity: 1;
+            margin-top: 6px;
+            margin-right: 4px;
+      }
+
+      #menu a {
+            font-size: 20px;
+            font-weight: 300;
+      }
+
+      #resize li span {
+            font-weight: bolder;
+      }
+
+      nav #menu {
+            display: none;
+      }
+}
+
+@media(min-width: 768px) {
+      #resize {
+            visibility: hidden !important;
+      }
+}
+
+/*--------------- homepage text--------------- */
+.container1{
+      width: 100%;
+      padding-left: 12%;
+      color: white;
+      height: auto;
+}
+.container1 h1 {
+      font-size: 60px;
+      display: flex;
+      flex-flow: column wrap;
+      font-family: Opposit-sb,serif;
+      padding-top: 10%;
+  }
+  .container1 h2{
+    font-size: 60px;
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 30px;
+    font-family: Mabry,serif;
+  }
+
+  .container1 h3{
+    font-size: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: -10%;
+}
+
+@media(max-width: 768px){
+  .container1 h1{
+    padding-top: 25%;
+    font-size: 45px;
+    padding-bottom: 5%;
+
+  }
+  .container1 h2{
+    font-size: 45px;
+    padding-bottom: 15%;
+  }
+  .container1 h3{
+    font-size: 30px;
+    padding-bottom: 15%;
+  }
+}
+/* smart phones */
+@media(max-width: 480px) {
+  .container1 h1{
+    font-size: 30px;
+    padding-top: -5%;
+  }
+  .container1 h2{
+    font-size: 23px;  
+    padding-top: 15%;
+  }
+  .container1 h3{
+    font-size: 25px;
+    padding-top: 5%;
+  }
+}
+/*------------------- img homepage -------------- */
+/* artwrk 1*/
+.ticket {
+       height: 18em;
+       width: 23em;
+       margin-left: 55%;
+       margin-top: -21%;
+}
+/*stars*/
+.img1{
+      margin-left: 45%;
+      height: 25px;
+      width:25px;
+      margin-top: -7%;    
+}
+
+.imgz{
+    height: 40%;
+    width: 23%;
+    margin-left: 80px;
+    margin-top: -5%;
+    margin-bottom: 3%;
+}
+
+.img2{
+   margin-left: 75%;
+   height: 70px;
+   width:75px;
+   margin-top: -1%;
+ }     
+     
+.img3{
+      height: 40px;
+      width: 40px;
+      margin-top: -1%;
+      margin-left: 57%; 
+} 
+
+.img4{
+      height: 40px;
+      width:40px;
+      margin-top: -15%;
+      margin-left: -5%;        
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.img2, .img3{
+    animation: blink 8s;
+    animation-iteration-count: infinite;
+}
+.img1, .img4{
+      animation: blink 15s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes blink {
+       0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink{
+       0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media(max-width: 768px){
+  
+  .ticket{
+     height: 15em;
+     width: 18em;
+     margin-top: -5%;
+     margin-left: 7%;
+  }
+  .img1{
+    margin-left: 90%;
+    margin-top: -19%;
+  }
+  .img2{
+    display: none;
+  }
+  .imgz{
+    display: none;
+  }
+  .img3{
+      height: 25px;
+      width: 25px;
+      margin-left: 90%; 
+  } 
+  .img4{
+      height: 30px;
+      width:30px;
+      margin-top: -25%;
+      margin-left: -10%;        
+  } 
+}
+	/*smart phones */
+@media(max-width: 480px) {
+  .ticket{
+    margin-left: -5%;
+  }
+  .img3{
+    margin-left: 80%;
+  }
+  .img4{
+    left: -1%;
+    width: 25px;
+  }
+}
+/*---------------- scroll down icon animation --------------- */
+.scroll{
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  display: block;
+  text-align: center;
+  width: 30px;
+  -webkit-transform: translate(-50%, 0) rotate(90deg);
+   animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+
+@keyframes fade_move_down {
+      0% {
+            transform: translate(0, -20px) rotate(90deg);
+            opacity: 0;
+      }
+      50% {
+            opacity: 1;
+      }
+      100% {
+            transform: translate(0, 20px) rotate(90deg);
+            opacity: 0;
+      }
+}
+@media(max-width: 768px){
+  .scroll-down{
+    top: 90%;
+  }
+}
+
+@media(max-width: 480px){
+  .scroll-down{
+    top: 75%;
+  }
+}
+
+/*--------------- before section --------------- */
+h2{
+  margin-left: 3%;
+}
+
+/*--------------- projects section --------------- */
+.container{
+      width: 100%;
+      margin: 10% auto;
+}
+
+img {
+      width: 150%;
+
+}
+
+.txt {
+      position: relative;
+}
+
+.text-1 {
+      top: 120px;
+      left: -5px;
+      font-size: 50px;
+}
+
+.text-2 {
+      z-index: 2;
+      top: 10px;
+      font-size: 100px;
+}
+.text-3 {
+      top: 100px;
+      left: 10px;
+      font-size: 90px;
+}
+.number{
+  font-size: 20px;
+  font-family: opposit-sb;
+}
+/*insulearn*/
+.one {
+      margin-top: 100px;
+      -webkit-filter: grayscale(100%);/* Chrome, Safari, Opera */
+      filter: grayscale(100%);
+}
+.one:hover{
+    -webkit-filter:none ;/* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+}
+.one:hover ~ .text-1{
+  color: #90BBC1;
+}
+
+/*rutina*/
+.two{
+
+  -webkit-filter: grayscale(100%);/* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+.text-2:hover {
+  color: #ED9B72;
+}
+.text-2:hover ~ .two{
+    -webkit-filter:none ;/* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+}
+
+/*fitbuddy*/
+.three {
+      z-index: 2;
+      top: -20px;
+      -webkit-filter: grayscale(100%);/* Chrome, Safari, Opera */
+      filter: grayscale(100%);
+}
+.text-3:hover {
+  color: #9DD7EA;
+}
+.text-3:hover ~ .three{
+    -webkit-filter:none ;/* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+}
+/*
+.three:hover{
+    -webkit-filter:none ;/* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+}
+/*
+.three:hover ~ .text-3{
+  color: #9DD7EA;
+}
+
+/*
+.four {
+      margin-top: -400px;
+}
+
+.text-3 {
+      z-index: 1;
+      top: -140px;
+      left: -180px;
+}
+
+.text-4 {
+      z-index: 1;
+      top: 300px;
+      left: 300px;
+}
+
+.six {
+      top: -750px;
+}
+*/
+
+@media(max-width: 768px) {
+      .container {
+            width: 90% !important;
+            margin: 14px auto;
+            margin-top: 40%;
+      }
+
+      .vertical {
+            display: none;
+      }
+
+      .one::after, .two::after, .three::after{
+            display: none;
+      }
+      .text-2{
+        left: 10px;
+      }
+}
+/*  --------------- footer --------------------*/
+.collab {
+      text-align: right;
+}
+
+.collab p {
+      margin-bottom: 10px;
+      font-size: 15px;
+}
+
+.hr {
+      height: 1px;
+}
+
+.info h4 {
+      font-size: 13px;
+      margin-top: 9px;
+}
+#address {
+      text-align: left;
+      font-size: 20px;
+}
+
+
+@media(max-width: 768px) {
+      .collab, #personal, #media, #address {
+            text-align: center;
+      }
+
+      .info ul {
+            margin: 0 0 0 -22px;
+            padding: 0;
+      }
+}
