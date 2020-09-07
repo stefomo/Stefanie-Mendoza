@@ -1,0 +1,1708 @@
+
+
+
+
+/* about page (╥_╥) ┐(‘～`；)┌ v(ಥ ̯ ಥ)v* wip/
+
+/*--------------- basic styling --------------- */
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: "Mabry" !important;
+      background: #0f0f0f!important;
+      color: #fff  !important;
+}
+.whitespace {
+      width: 100%;
+      height: 100px;
+}
+
+@media(max-width: 768px) {
+      .whitespace {
+            display: none;
+      }
+}
+
+@font-face {
+      src: url(fonts/MabryPro-Regular.ttf);
+      font-family: Mabry;
+}
+
+@font-face {
+      src: url(fonts/0pposit-regular.ttf);
+      font-family: opposit;
+}
+
+@font-face {
+      src: url(fonts/Opposit-SemiBold.ttf);
+      font-family: opposit-sb;
+}
+@font-face{
+      src: url(fonts/Andale-Mono.ttf);
+      font-family: Andale;
+}
+
+/*--------------- navigation --------------- */
+nav {
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      font-size: 17px;
+      font-family: Mabry, Roboto-mono, sans-serif;
+
+}
+
+nav #menu {
+      float: none;
+      text-align: center;
+}
+
+nav #menu li {
+      display: inline-block;
+      margin-right: 40px;
+      cursor: pointer;
+      line-height: 80px;
+      position: relative;
+      transition: all 0.3s ease-out;
+}
+
+nav #menu li a {
+      color:#fff ;
+}
+
+nav #menu li a:hover {
+      text-decoration: none;
+}
+
+.extra { 
+    float: left;
+    display: none;
+    font-family: Mabry,sans-serif;
+    font-size: 20px;
+    color: #fff ;
+    padding-right: 20px;
+}
+
+li:hover .extra {
+    display: inline-block;
+}
+
+.here { 
+    float: left;
+    font-family: Mabry,sans-serif;
+    font-size: 20px;
+    color:#fff ;
+    padding-right: 20px;
+}
+
+li:active .here {
+    display: inline-block;
+}
+
+
+#toggle {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      font-weight: 300;
+      z-index: 2;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      float: right;
+      transition: all 0.3s ease-out;
+      visibility: hidden;
+      opacity: 0;
+}
+
+.close-btn {
+      position: absolute;
+      right: 16px;
+      font-weight: 300;
+      z-index: 2;
+      cursor: pointer;
+      top: -2px;
+      line-height: 80px;
+      color: #fff ;
+}
+
+#resize {
+      z-index: 1;
+      top: 0px;
+      position: fixed;
+      background: #0f0f0f;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 1s ease-out;
+}
+
+#resize #menu {
+      height: 90px;
+      position: absolute;
+      left: 45%;
+      transform: translateX(-40%);
+      text-align: center;
+      display: table-cell;
+      vertical-align: center;
+}
+
+#resize #menu li {
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 50px;
+      min-height: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+}
+
+#resize li:nth-child(1) {
+      margin-top: 140px;
+}
+
+#resize #menu li a {
+      color: #fff;
+}
+
+#resize #menu li a:hover {
+      text-decoration: none;
+}
+
+#resize.active {
+      visibility: visible;
+      opacity: 1;
+}
+
+@media(max-width: 768px) {
+      #toggle {
+            visibility: visible;
+            opacity: 1;
+            margin-top: 6px;
+            margin-right: 4px;
+      }
+
+      #menu a {
+            font-size: 20px;
+            font-weight: 300;
+      }
+
+      #resize li span {
+            font-weight: bolder;
+      }
+
+      nav #menu {
+            display: none;
+      }
+}
+
+@media(min-width: 768px) {
+      #resize {
+            visibility: hidden !important;
+      }
+}
+/*-------------- footer */
+.collab {
+      text-align: right;
+}
+
+.collab p {
+      margin-bottom: 10px;
+      font-size: 15px;
+}
+
+.hr {
+      height: 1px;
+}
+
+.info h4 {
+      font-size: 13px;
+      margin-top: 9px;
+}
+#address {
+      text-align: left;
+      font-size: 20px;
+}
+
+
+@media(max-width: 768px) {
+      .collab, #personal, #media, #address {
+            text-align: center;
+      }
+
+      .info ul {
+            margin: 0 0 0 -22px;
+            padding: 0;
+      }
+}
+
+/*--------------------------------  
+##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops ------------------------------- */
+@media (min-width: 1281px){
+  .rectan {
+    border: 3px solid white;
+    padding: 23%;
+    margin: 5% auto 1%;
+  }
+  /*----- welcome-- */
+  .rectan1{
+    width: 35%;
+    height: 300px;
+    border: 1px solid white;
+    padding: 20px;
+    margin-left: -43.5%;
+    margin-top: -43.5%;
+  }
+
+  .door{
+    margin-left: 17%;
+    margin-top: 30%;
+    width: 60%;
+  }
+  path{
+    fill: transparent;
+  }
+  text{
+    fill: white;
+    font-family: Opposit, Mabry, sans-serif;
+  }
+  .text1{
+    font-size: 100px;
+    margin-top: -230%;
+  }
+  /*2nd  about box*/
+  .rectan2{
+    width: 115%;
+    height: 70px;
+    border: 1px solid white;
+    padding: 20px;
+    margin-left: -8.5%;
+    margin-top: -49%;
+  }
+  .text2{
+    font-family: Opposit-sb, Mabry, sans-serif;
+    font-size: 55px;
+    margin-top: -3%;
+  }
+
+  /*box3 cam */
+  .rectan3{
+    width: 37%;
+    height: 300px;
+    border: 1px solid transparent;
+    padding: 20px;
+    margin-left: 106.5%;
+    margin-top: -11.5%;
+  }
+
+  .cam{
+    width: 100%;
+    margin-top: 25%;
+    margin-left: -5%;
+  }
+  /* box4 about text */
+  .rectan4{
+    width: 115%;
+    height: 230px;
+    border: 1px solid white;
+    padding: 20px;
+    margin-left: -8.5%;
+    margin-top: -38%;
+  }
+  .text3{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 15px;
+  }
+  /*  box 5 polaroid  */
+  .rectan5{
+    width: 75%;
+    height: 500px;
+    border: 1px solid white;
+    margin-left: -43.5%;
+    margin-top: -0.1%;
+  }
+
+  .photo1{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+  /*box 6 name */
+  .rectan6{
+    width: 112%;
+    height: 70px;
+    border: 1px solid white;
+    margin-left: 31.5%;
+    margin-top: -82%;
+  }
+  .text5{
+    font-size: 55px;
+    margin-left: 2%;
+    margin-top: -1%;
+    font-family: Opposit-sb, Mabry, sans-serif;
+  }
+
+  /*box 7 more about me*/
+  .rectan7{
+    width: 80%;
+    height: 431px;
+    border: 1px solid white;
+    margin-left: 31.5%;
+    margin-top: -0.1%;
+  }
+
+  .screen{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+  .about{
+    margin-top: -60%;
+    margin-left: 10%;
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 15px;
+  }
+  /* box 8 img */
+  .laptop{
+    width: 25%;
+    margin-left: 114%;
+    margin-top: -115%;
+  }
+  .remind{
+    width: 27%;
+    margin-left: 114%;
+    margin-top: -70%;
+  }
+  .goals{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 17px;
+    margin-left: 118%;
+    margin-top: -40%;
+  }
+
+  .rectan8{
+    height: 71px;
+    border: 1px solid transparent;
+    margin-left: -10%;
+    margin-top: -38%;
+  } 
+    .text11{
+    display: none;
+  }
+  .mobrec{
+    display: none;
+  }
+}
+/*------- ##Device = Laptops, Desktops----------------------------------*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .rectan {
+    border: 3px solid white;
+    padding: 23%;
+    margin: 5% auto 1%;
+  }
+  /*----- welcome-- */
+  .rectan1{
+    width: 35%;
+    height: 300px;
+    border: 1px white;
+    border-style: solid solid hidden hidden;
+    padding: 20px;
+    margin-left: -43.5%;
+    margin-top: -43.5%;
+  }
+
+  .door{
+    margin-left: 17%;
+    margin-top: 30%;
+    width: 60%;
+  }
+  path{
+    fill: transparent;
+  }
+  text{
+    fill: white;
+    font-family: Opposit, Mabry, sans-serif;
+  }
+  .text1{
+    font-size: 100px;
+    margin-top: -230%;
+  }
+  /*2nd  about box*/
+  .rectan2{
+    width: 115%;
+    height: 70px;
+    border: 1px white;
+    border-style: hidden solid solid solid;
+    padding: 20px;
+    margin-left: -8.5%;
+    margin-top: -49%;
+  }
+  .text2{
+    font-family: Opposit-sb, Mabry, sans-serif;
+    font-size: 55px;
+    margin-top: -3%;
+  }
+
+  /*box3 cam */
+  .rectan3{
+    width: 37%;
+    height: 300px;
+    border: 1px hidden white;
+    padding: 20px;
+    margin-left: 106.5%;
+    margin-top: -11.5%;
+  }
+
+  .cam{
+    width: 100%;
+    margin-top: 25%;
+    margin-left: -5%;
+  }
+  /* box4 about text */
+  .rectan4{
+    width: 115%;
+    height: 230px;
+    border: 1px solid white;
+    padding: 20px;
+    margin-left: -8.5%;
+    margin-top: -38%;
+  }
+  .text3{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 15px;
+  }
+  /*  box 5 polaroid  */
+  .rectan5{
+    width: 75%;
+    height: 500px;
+    border: 1px solid white;
+    margin-left: -43.5%;
+    margin-top: -0.1%;
+  }
+
+  .photo1{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+  /*box 6 name */
+  .rectan6{
+    width: 112%;
+    height: 70px;
+    border: 1px solid white;
+    margin-left: 31.5%;
+    margin-top: -82%;
+  }
+  .text5{
+    font-size: 55px;
+    margin-left: 2%;
+    margin-top: -1%;
+    font-family: Opposit-sb, Mabry, sans-serif;
+  }
+
+  /*box 7 more about me*/
+  .rectan7{
+    width: 80%;
+    height: 431px;
+    border: 1px solid white;
+    margin-left: 31.5%;
+    margin-top: -0.1%;
+  }
+
+  .screen{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+  .about{
+    margin-top: -70%;
+    margin-left: 10%;
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 15px;
+  }
+  /* box 8 img */
+  .laptop{
+    width: 25%;
+    margin-left: 114%;
+    margin-top: -115%;
+  }
+  .remind{
+    width: 27%;
+    margin-left: 114%;
+    margin-top: -70%;
+  }
+  .goals{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 17px;
+    margin-left: 118%;
+    margin-top: -40%;
+  }
+
+  .rectan8{
+    height: 71px;
+    border: 1px solid transparent;
+    margin-left: -10%;
+    margin-top: -38%;
+  } 
+    .text11{
+    display: none;
+  }
+  .mobrec{
+    display: none;
+  }
+}
+
+/*desktop */
+@media (min-width: 998px) and (max-width: 1200px) {
+   .rectan {
+    border: 3px solid white;
+    padding: 23%;
+    margin: 5% auto 1%;
+  }
+  /*----- welcome-- */
+  .rectan1{
+    width: 35%;
+    height: 300px;
+    border: 1px hidden white;
+    padding: 10px;
+    margin-left: -43.5%;
+    margin-top: -43.5%;
+  }
+
+  .door{
+    margin-left: 25%;
+    margin-top: 40%;
+    width: 50%;
+  }
+  path{
+    fill: transparent;
+  }
+  text{
+    fill: white;
+    font-family: Opposit, Mabry, sans-serif;
+  }
+  .text1{
+    font-size: 100px;
+    margin-top: -180%;
+    margin-left: 3%;
+  }
+  /*2nd  about box*/
+  .rectan2{
+    width: 115%;
+    height: 70px;
+    border: 1px white;
+    border-style: hidden solid hidden solid;
+    padding: 20px;
+    margin-left: -8.5%;
+    margin-top: -58%;
+  }
+  .text2{
+    font-family: Opposit-sb, Mabry, sans-serif;
+    font-size: 55px;
+    margin-top: -3%;
+  }
+
+  /*box3 cam */
+  .rectan3{
+    width: 37%;
+    height: 300px;
+    border: 1px solid transparent;
+    padding: 20px;
+    margin-left: 106.5%;
+    margin-top: -13.5%;
+  }
+
+  .cam{
+    width: 100%;
+    margin-top: 30%;
+    margin-left: -5%;
+  }
+  /* box4 about text */
+  .rectan4{
+    width: 115%;
+    height: 270px;
+    border: 1px solid white;
+    padding: 20px;
+    margin-left: -8.5%;
+    margin-top: -45%;
+  }
+  .text3{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 15px;
+  }
+  /*  box 5 polaroid  */
+  .rectan5{
+    width: 75%;
+    height: 500px;
+    border: 1px  white;
+    border-style: solid solid hidden hidden;
+    margin-left: -43.5%;
+    margin-top: -0.1%;
+  }
+
+  .photo1{
+    width: 95%;
+    margin-left: 3%;
+    margin-top: 5%;
+  }
+  /*box 6 name */
+  .rectan6{
+    width: 112%;
+    height: 70px;
+    border: 1px white;
+    border-style: solid hidden solid hidden;
+    margin-left: 31.5%;
+    margin-top: -97.5%;
+  }
+  .text5{
+    font-size: 55px;
+    margin-left: 2%;
+    margin-top: -1%;
+    font-family: Opposit-sb, Mabry, sans-serif;
+  }
+
+  /*box 7 more about me*/
+  .rectan7{
+    width: 80%;
+    height: 420spx;
+    border: 1px white;
+    border-style: hidden solid hidden hidden;
+    margin-left: 31.5%;
+    margin-top: -0.1%;
+  }
+
+  .screen{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 13%;
+  }
+  .about{
+    margin-top: -75%;
+    margin-left: 10%;
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 14px;
+  }
+  /* box 8 img */
+  .laptop{
+    width: 25%;
+    margin-left: 114%;
+    margin-top: -150%;
+  }
+  .remind{
+    width: 27%;
+    margin-left: 114%;
+    margin-top: -85%;
+  }
+  .goals{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 17px;
+    margin-left: 118%;
+    margin-top: -50%;
+  }
+
+  .rectan8{
+    height: 80px;
+    border: 1px solid transparent;
+    margin-left: -10%;
+    margin-top: -35.5%;
+  } 
+  .text11{
+    display: none;
+  }
+  .mobrec{
+    display: none;
+  }
+}
+/*--------------- smaller ----------------*/
+@media (min-width: 481px) and (max-width: 765px) {
+   .rectan {
+    border: 3px solid white;
+    padding: 20%;
+    margin: 5%;
+    margin-left: 2.5%;
+
+  }
+  /*----- welcome-- */
+  .rectan1{
+    width: 178%;
+    height: 340px;
+    border: 1px solid transparent;
+    padding: 20px;
+    margin-left: -39%;
+    margin-top: -40%;
+  }
+
+  .door{
+    margin-left: 35%;
+    margin-top: 10%;
+    width: 25%;
+  }
+  .text1{
+   display: none;
+  }
+  .text11{
+    font-family: opposit-sb, mabry, sans-serif;
+    color: white;
+    margin-top: -65%;
+    margin-left: 33%;
+  }
+
+  /*2nd  about box*/
+  .rectan2{
+    width: 176%;
+    height: 80px;
+    border: 1px white;
+    border-style: solid hidden solid hidden;
+    padding: 20px;
+    margin-left: -38%;
+    margin-bottom: 10%;
+  }
+  .text2{
+    font-family: Opposit-sb, Mabry, sans-serif;
+    font-size: 55px;
+    margin-top: -5%;
+    margin-left: 10%;
+  }
+
+  /*box 6 name */
+  .rectan6{
+    width: 49%;
+    height: 550.5px;
+    border: 1px solid transparent;
+    margin-left: -39.5%;
+    margin-top: -230%;
+  }
+  .text5{
+    font-size: 45px;
+    margin-left: 20%;
+    margin-top: 70%;
+    font-family: Opposit-sb, Mabry, sans-serif;
+    writing-mode: vertical-rl;
+  }
+  /* box4 about text */
+  .rectan4{
+    width: 129%;
+    height: 550px;
+    border: 1px white;
+    border-style: hidden hidden solid solid;
+    padding: 20px;
+    margin-left: 9%;
+    margin-top: -10%;
+  }
+  .text3{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 15px;
+    margin-top: 7%;
+  }
+  /*  box 5 polaroid  */
+  .rectan5{
+    width: 104%;
+    height: 330px;
+    border: 1px white;
+    border-style: solid solid solid hidden;
+    margin-left: -38%;
+    margin-top: -0.5%;
+  }
+
+  .photo1{
+    width: 95%;
+    margin-left: 1%;
+    margin-top: 5%;
+  }
+  
+   /*box3 cam */
+  .rectan3{
+    display: none;
+  }
+  .mobrec{
+    border: 1px solid transparent;
+    margin-left: 66%;
+    margin-top: -152%;
+    width: 72%;
+    height: 100px;
+  }
+  .cam1{
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 60%;
+  }
+
+
+  /*box 7 more about me*/
+  .rectan7{
+    width: 105%;
+    height: 350px;
+    border: 1px white;
+    border-style: hidden solid hidden hidden;
+    margin-left: -39%;
+    margin-top: 148%;
+  }
+
+  .screen{
+    display: none;
+  }
+  .about{
+    margin-left: 3%;
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 15px;
+  }
+  /* box 8 img */
+  .rectan9{
+    border: 1px white;
+    border-style: solid hidden solid solid;
+    margin-left: 65.8%;
+    margin-top: -180%;
+    width: 72%;
+    height: 245px;
+  }
+  .laptop{
+    width: 80%;
+    margin-top: 15%;
+    margin-left: 10%;
+  }
+
+  .remind{
+    width: 60%;
+    margin-left: 73%;
+    margin-top: 15%;
+  }
+  .goals{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 13px;
+    margin-left: 80%;
+    margin-top: -40%;
+  }
+
+  .rectan8{
+    height: 63px;
+    border: 1px solid transparent;
+    margin-left: -10%;
+    margin-top:-30%;
+  } 
+}
+
+/*-------------------------     ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px --------------------------*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .rectan {
+    border: 3px solid white;
+    padding: 23%;
+    margin: 5% auto 1%;
+  }
+  /*----- welcome-- */
+  .rectan1{
+    width: 35%;
+    height: 300px;
+    border: 1px hidden white;
+    padding: 20px;
+    margin-left: -43.5%;
+    margin-top: -43.5%;
+  }
+
+  .door{
+    margin-left: 10%;
+    margin-top: 80%;
+    width: 75%;
+  }
+  path{
+    fill: transparent;
+  }
+  text{
+    fill: white;
+    font-family: Opposit, Mabry, sans-serif;
+  }
+  .text1{
+    font-size: 100px;
+    margin-top: -305%;
+  }
+  /*2nd  about box*/
+  .rectan2{
+    width: 115%;
+    height: 70px;
+    border: 1px solid white;
+    padding: 20px;
+    margin-left: -8.5%;
+    margin-top: -78.5%;
+  }
+  .text2{
+    font-family: Opposit-sb, Mabry, sans-serif;
+    font-size: 55px;
+    margin-top: -3%;
+  }
+
+  /*box3 cam */
+  .rectan3{
+    width: 37%;
+    height: 230px;
+    border: 1px solid transparent;
+    padding: 20px;
+    margin-left: 106.5%;
+    margin-top: -13.5%;
+  }
+
+  .cam{
+    width: 100%;
+    margin-top: 70%;
+    margin-left: -5%;
+  }
+  /* box4 about text */
+  .rectan4{
+    width: 115%;
+    height: 230px;
+    border: 1px white;
+    border-style: hidden solid solid solid;
+    padding: 20px;
+    margin-left: -8.5%;
+    margin-top: -47%;
+  }
+  .text3{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 11px;
+  }
+  /*  box 5 polaroid  */
+  .rectan5{
+    width: 75%;
+    height: 400px;
+    border: 1px white;
+    border-style: solid solid hidden hidden;
+    margin-left: -43.5%;
+    margin-top: -0.3%;
+  }
+
+  .photo1{
+    width: 100%;
+    margin-left: 1%;
+    margin-top: 10%;
+  }
+  /*box 6 name */
+  .rectan6{
+    width: 112%;
+    height: 70px;
+    border: 1px solid white;
+    margin-left: 31.5%;
+    margin-top: -104.5%;
+  }
+  .text5{
+    font-size: 45px;
+    margin-left: 2%;
+    margin-top: -1%;
+    font-family: Opposit-sb, Mabry, sans-serif;
+  }
+
+  /*box 7 more about me*/
+  .rectan7{
+    width: 80%;
+    height: 330px;
+    border: 1px white;
+    border-style: hidden solid hidden hidden;
+    margin-left: 31.5%;
+    margin-top: -0.2%;
+  }
+
+  .screen{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+  .about{
+    margin-top: -75%;
+    margin-left: 5%;
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 11px;
+  }
+  /* box 8 img */
+  .laptop{
+    width: 25%;
+    margin-left: 114%;
+    margin-top: -120%;
+  }
+  .remind{
+    width: 27%;
+    margin-left: 114%;
+    margin-top: -60%;
+  }
+  .goals{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 11px;
+    margin-left: 118%;
+    margin-top: -35%;
+  }
+
+  .rectan8{
+    height: 71px;
+    border: 1px solid transparent;
+    margin-left: -10%;
+    margin-top: -55.5%;
+  } 
+  .text11{
+    display: none;
+  }
+  .mobrec{
+    display: none;
+  }
+}
+
+
+/* -------------------##Device = Ipad pro (portrait)------------------------ */ 
+ @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .rectan {
+    border: 3px solid white;
+    padding: 23%;
+    margin: 5% auto 1%;
+  }
+  /*----- welcome-- */
+  .rectan1{
+    width: 35%;
+    height: 300px;
+    border: 1px solid white;
+    padding: 20px;
+    margin-left: -43.5%;
+    margin-top: -43.5%;
+  }
+
+  .door{
+    margin-left: 10%;
+    margin-top: 30%;
+    width: 75%;
+  }
+  path{
+    fill: transparent;
+  }
+  text{
+    fill: white;
+    font-family: Opposit, Mabry, sans-serif;
+  }
+  .text1{
+    font-size: 100px;
+    margin-top: -305%;
+  }
+  /*2nd  about box*/
+  .rectan2{
+    width: 115%;
+    height: 70px;
+    border: 1px solid white;
+    padding: 20px;
+    margin-left: -8.5%;
+    margin-top: -58.5%;
+  }
+  .text2{
+    font-family: Opposit-sb, Mabry, sans-serif;
+    font-size: 55px;
+    margin-top: -3%;
+  }
+
+  /*box3 cam */
+  .rectan3{
+    width: 37%;
+    height: 300px;
+    border: 1px solid transparent;
+    padding: 20px;
+    margin-left: 106.5%;
+    margin-top: -13.5%;
+  }
+
+  .cam{
+    width: 100%;
+    margin-top: 30%;
+    margin-left: -5%;
+  }
+  /* box4 about text */
+  .rectan4{
+    width: 115%;
+    height: 230px;
+    border: 1px solid white;
+    padding: 20px;
+    margin-left: -8.5%;
+    margin-top: -45%;
+  }
+  .text3{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 13px;
+  }
+  /*  box 5 polaroid  */
+  .rectan5{
+    width: 75%;
+    height: 500px;
+    border: 1px solid white;
+    margin-left: -43.5%;
+    margin-top: -0.3%;
+  }
+
+  .photo1{
+    width: 100%;
+    margin-left: 1%;
+    margin-top: 10%;
+  }
+  /*box 6 name */
+  .rectan6{
+    width: 112%;
+    height: 70px;
+    border: 1px solid white;
+    margin-left: 31.5%;
+    margin-top: -97.4%;
+  }
+  .text5{
+    font-size: 55px;
+    margin-left: 2%;
+    margin-top: -1%;
+    font-family: Opposit-sb, Mabry, sans-serif;
+  }
+
+  /*box 7 more about me*/
+  .rectan7{
+    width: 80%;
+    height: 431px;
+    border: 1px solid white;
+    margin-left: 31.5%;
+    margin-top: -0.1%;
+  }
+
+  .screen{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 13%;
+  }
+  .about{
+    margin-top: -60%;
+    margin-left: 10%;
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 13px;
+  }
+  /* box 8 img */
+  .laptop{
+    width: 25%;
+    margin-left: 114%;
+    margin-top: -130%;
+  }
+  .remind{
+    width: 27%;
+    margin-left: 114%;
+    margin-top: -70%;
+  }
+  .goals{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 17px;
+    margin-left: 118%;
+    margin-top: -40%;
+  }
+
+  .rectan8{
+    height: 71px;
+    border: 1px solid transparent;
+    margin-left: -10%;
+    margin-top: -44.5%;
+  } 
+  .text11{
+    display: none;
+  }
+  .mobrec{
+    display: none;
+  }
+}
+/*------------------landscape----------*/
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .rectan {
+    border: 3px solid white;
+    padding: 23%;
+    margin: 5% auto 1%;
+  }
+  /*----- welcome-- */
+  .rectan1{
+    width: 35%;
+    height: 300px;
+    border: 1px solid white;
+    padding: 10px;
+    margin-left: -43.5%;
+    margin-top: -43.5%;
+  }
+
+  .door{
+    margin-left: 25%;
+    margin-top: 30%;
+    width: 50%;
+  }
+  path{
+    fill: transparent;
+  }
+  text{
+    fill: white;
+    font-family: Opposit, Mabry, sans-serif;
+  }
+  .text1{
+    font-size: 100px;
+    margin-top: -180%;
+    margin-left: 3%;
+  }
+  /*2nd  about box*/
+  .rectan2{
+    width: 115%;
+    height: 70px;
+    border: 1px solid white;
+    padding: 20px;
+    margin-left: -8.5%;
+    margin-top: -49%;
+  }
+  .text2{
+    font-family: Opposit-sb, Mabry, sans-serif;
+    font-size: 55px;
+    margin-top: -3%;
+  }
+
+  /*box3 cam */
+  .rectan3{
+    width: 37%;
+    height: 300px;
+    border: 1px solid transparent;
+    padding: 20px;
+    margin-left: 106.5%;
+    margin-top: -13.5%;
+  }
+
+  .cam{
+    width: 100%;
+    margin-top: 30%;
+    margin-left: -5%;
+  }
+  /* box4 about text */
+  .rectan4{
+    width: 115%;
+    height: 230px;
+    border: 1px solid white;
+    padding: 20px;
+    margin-left: -8.5%;
+    margin-top: -36%;
+  }
+  .text3{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 15px;
+  }
+  /*  box 5 polaroid  */
+  .rectan5{
+    width: 75%;
+    height: 550px;
+    border: 1px solid white;
+    margin-left: -43.5%;
+    margin-top: -0.1%;
+  }
+
+  .photo1{
+    width: 95%;
+    margin-left: 3%;
+    margin-top: 5%;
+  }
+  /*box 6 name */
+  .rectan6{
+    width: 112%;
+    height: 70px;
+    border: 1px solid white;
+    margin-left: 31.5%;
+    margin-top: -90.2%;
+  }
+  .text5{
+    font-size: 55px;
+    margin-left: 2%;
+    margin-top: -1%;
+    font-family: Opposit-sb, Mabry, sans-serif;
+  }
+
+  /*box 7 more about me*/
+  .rectan7{
+    width: 80%;
+    height: 481px;
+    border: 1px solid white;
+    margin-left: 31.5%;
+    margin-top: -0.1%;
+  }
+
+  .screen{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 13%;
+  }
+  .about{
+    margin-top: -60%;
+    margin-left: 10%;
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 15px;
+  }
+  /* box 8 img */
+  .laptop{
+    width: 25%;
+    margin-left: 114%;
+    margin-top: -120%;
+  }
+  .remind{
+    width: 27%;
+    margin-left: 114%;
+    margin-top: -60%;
+  }
+  .goals{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 17px;
+    margin-left: 118%;
+    margin-top: -35%;
+  }
+
+  .rectan8{
+    height: 80px;
+    border: 1px solid transparent;
+    margin-left: -10%;
+    margin-top: -44.5%;
+  } 
+  .text11{
+    display: none;
+  }
+  .mobrec{
+    display: none;
+  }
+}
+
+/*-------------------------     iphone x, galaxy 5  --------------------------*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .rectan {
+    border: 3px solid white;
+    padding: 20%;
+    margin: 5%;
+    margin-left: 2.5%;
+
+  }
+  /*----- welcome-- */
+  .rectan1{
+    width: 178%;
+    height: 250px;
+    border: 1px solid transparent;
+    padding: 20px;
+    margin-left: -39%;
+    margin-top: -40%;
+  }
+
+  .door{
+    margin-left: 35%;
+    margin-top: 10%;
+    width: 30%;
+  }
+  .text1{
+   display: none;
+  }
+  .text11{
+    font-family: opposit-sb, mabry, sans-serif;
+    color: white;
+    margin-top: -80%;
+    margin-left: 30%;
+  }
+
+  /*2nd  about box*/
+  .rectan2{
+    width: 176%;
+    height: 80px;
+    border: 1px white;
+    border-style: solid hidden solid hidden;
+    padding: 20px;
+    margin-left: -38%;
+    margin-bottom: 10%;
+  }
+  .text2{
+    font-family: Opposit-sb, Mabry, sans-serif;
+    font-size: 55px;
+    margin-top: -5%;
+    margin-left: 10%;
+  }
+
+  /*box 6 name */
+  .rectan6{
+    width: 49%;
+    height: 550.5px;
+    border: 1px solid transparent;
+    margin-left: -39.5%;
+    margin-top: -389%;
+  }
+  .text5{
+    font-size: 55px;
+    margin-left: 20%;
+    margin-top: 45%;
+    font-family: Opposit-sb, Mabry, sans-serif;
+    writing-mode: vertical-rl;
+  }
+  /* box4 about text */
+  .rectan4{
+    width: 129%;
+    height: 550px;
+    border: 1px white;
+    border-style: hidden hidden solid solid;
+    padding: 20px;
+    margin-left: 9%;
+    margin-top: -10%;
+  }
+  .text3{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 13.5px;
+    margin-top: 7%;
+  }
+  /*  box 5 polaroid  */
+  .rectan5{
+    width: 104%;
+    height: 300px;
+    border: 1px white;
+    border-style: solid solid solid hidden;
+    margin-left: -38%;
+    margin-top: -0.5%;
+  }
+
+  .photo1{
+    width: 95%;
+    margin-left: 5%;
+    margin-top: 15%;
+  }
+  
+   /*box3 cam */
+  .rectan3{
+    display: none;
+  }
+  .mobrec{
+    border: 1px solid transparent;
+    margin-left: 66%;
+    margin-top: -152%;
+    width: 72%;
+    height: 220px;
+  }
+  .cam1{
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 35%;
+  }
+
+
+  /*box 7 more about me*/
+  .rectan7{
+    width: 105%;
+    height: 400px;
+    border: 1px white;
+    border-style: hidden solid hidden hidden;
+    margin-left: -39%;
+    margin-top: 147%;
+  }
+
+  .screen{
+    display: none;
+  }
+  .about{
+    margin-left: 3%;
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 13px;
+  }
+  /* box 8 img */
+  .rectan9{
+    border: 1px white;
+    border-style: solid hidden solid hidden;
+    margin-left: 66%;
+    margin-top: -227%;
+    width: 72%;
+    height: 245px;
+  }
+  .laptop{
+    width: 80%;
+    margin-top: 40%;
+    margin-left: 10%;
+  }
+
+  .remind{
+    width: 60%;
+    margin-left: 73%;
+    margin-top: 15%;
+  }
+  .goals{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 13px;
+    margin-left: 80%;
+    margin-top: -40%;
+  }
+
+  .rectan8{
+    height: 63px;
+    border: 1px solid transparent;
+    margin-left: -10%;
+    margin-top: -38%;
+  } 
+}
+/*------------------ moblie phone landscape ---------------*/
+@media only screen and (min-device-width: 480px) 
+                   and (max-device-width: 640px) 
+                   and (orientation: landscape) {
+  .rectan {
+    border: 3px solid white;
+    padding: 20%;
+    margin: 5%;
+    margin-left: 2.5%;
+
+  }
+  /*----- welcome-- */
+  .rectan1{
+    width: 178%;
+    height: 250px;
+    border: 1px solid transparent;
+    padding: 20px;
+    margin-left: -39%;
+    margin-top: -40%;
+  }
+
+  .door{
+    margin-left: 35%;
+    margin-top: 10%;
+    width: 25%;
+  }
+  .text1{
+   display: none;
+  }
+  .text11{
+    font-family: opposit-sb, mabry, sans-serif;
+    color: white;
+    margin-top: -65%;
+    margin-left: 33%;
+  }
+
+  /*2nd  about box*/
+  .rectan2{
+    width: 176%;
+    height: 80px;
+    border: 1px white;
+    border-style: solid hidden solid hidden;
+    padding: 20px;
+    margin-left: -38%;
+    margin-top: 30%;
+  }
+  .text2{
+    font-family: Opposit-sb, Mabry, sans-serif;
+    font-size: 55px;
+    margin-top: -5%;
+    margin-left: 20%;
+  }
+
+  /*box 6 name */
+  .rectan6{
+    width: 49%;
+    height: 550.5px;
+    border: 1px solid transparent;
+    margin-left: -39.5%;
+    margin-top: -190%;
+  }
+  .text5{
+    font-size: 55px;
+    margin-left: 20%;
+    margin-top: 45%;
+    font-family: Opposit-sb, Mabry, sans-serif;
+    writing-mode: vertical-rl;
+  }
+  /* box4 about text */
+  .rectan4{
+    width: 129%;
+    height: 500px;
+    border: 1px white;
+    border-style: hidden hidden solid solid;
+    padding: 20px;
+    margin-left: 9%;
+    margin-top: 1%;
+  }
+  .text3{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 14px;
+    margin-top: 7%;
+  }
+  /*  box 5 polaroid  */
+  .rectan5{
+    width: 104%;
+    height: 340px;
+    border: 1px white;
+    border-style: solid solid solid hidden;
+    margin-left: -38%;
+    margin-top: -0.5%;
+  }
+
+  .photo1{
+    width: 95%;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  
+   /*box3 cam */
+  .rectan3{
+    display: none;
+  }
+  .mobrec{
+    border: 1px solid transparent;
+    margin-left: 66%;
+    margin-top: -130%;
+    width: 72%;
+    height: 20px;
+  }
+  .cam1{
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 35%;
+  }
+
+
+  /*box 7 more about me*/
+  .rectan7{
+    width: 105%;
+    height: 350px;
+    border: 1px  white;
+    border-style: hidden solid hidden hidden;
+    margin-left: -39%;
+    margin-top: 104%;
+  }
+
+  .screen{
+    display: none;
+  }
+  .about{
+    margin-left: 3%;
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 13px;
+  }
+  /* box 8 img */
+  .rectan9{
+    border: 1px white;
+    border-style: solid hidden solid hidden;
+    margin-left: 66%;
+    margin-top: -160%;
+    width: 72%;
+    height: 200px;
+  }
+  .laptop{
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+  .remind{
+    width: 60%;
+    margin-left: 73%;
+    margin-top: 10%;
+  }
+  .goals{
+    font-family: Andale, Mabry, sans-serif;
+    font-size: 13px;
+    margin-left: 80%;
+    margin-top: -40%;
+  }
+
+  .rectan8{
+    height: 10px;
+    border: 1px solid transparent;
+    margin-left: -10%;
+    margin-top: -10%;
+  } 
+}

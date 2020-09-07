@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="UX/UI, Product Design Portfolio">
+      <meta name="author" content="Stefanie Mendoza">
+
+      <title>Stefanie Mendoza</title>
+
+      <!-- bootstrap cdns -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <!-- for on scroll animations -->
+      <link rel="stylesheet" href="animate.css">
+      <script src="wow.min.js"></script>
+
+       <!-- stylesheet -->
+      <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+      <div class="wrapper">
+
+            <!--------------- navbar --------------->
+
+            <nav>
+                  <ul id="menu">
+                  <li> <a href="index.html">Designs</a> <span class="extra"> -> </span> </li> 
+                  <li><a href="about.html">About</a> <span class="here"> -> </span> </li>
+                  
+                  <li><a href="contact.html">Resume</a> <span class="extra"> -> </span> </li>
+
+                  </ul>
+
+                  <div id="toggle">
+                        <div class="span">menu</div>
+                  </div>
+
+            </nav>
+
+            <div id="resize">
+                  <div class="close-btn">close</div>
+
+                  <ul id="menu">
+                        <li><a href="index.html">Designs</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Resume</a></li>
+                  </ul>
+            </div>
+            <!--------------- navbar----------------------------->
+
+            <div class="container">
+                        <br><br>
+
+                        <div class="row wow fadeInUp" data-wow-delay="0.2s">
+                              <div class="col-lg-12 rectan"> 
+                              <div class="rectan1"> 
+                                    <img src="img/door.png" class="door" alt="stairway">
+                                    <svg class="text1" viewBox="0 0 500 500">
+                                        <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+                                        <text width="500">
+                                          <textPath xlink:href="#curve">
+                                            welcome
+                                          </textPath>
+                                        </text>
+                                      </svg>
+                                     <h2 class="text11">welcome </h2>
+                                    </div>
+
+                            <div class="rectan2"> 
+                                    <h1 class="text2"> About Me</h1> </div>
+                        
+                        <div class="rectan3"> 
+                                  <img src="img/camera1.png" class="cam" alt="my camera"></div> 
+                        
+                              <div class="rectan4"> 
+                                    <p class="text3">Hello There, I’m Stefanie Mendoza
+                              from Orange County, CA, currently a student at UC San Diego studying speculative design and practicing to become a Product + User experience designer! 
+                              <br><br>
+                              I have always been curious and eager to explore the world around me and create art to express myself. As a designer I enjoy inventing concepts, taking on new challenges and being able to see my ideas come to life! Within Product design, I have used my skills to solve complex problems to create inclusive and accessible user experiences. </p> </div>
+                         
+                         <div class="rectan5">  
+                               <img src="img/photo1.png" class="photo1" alt="my picture"> </div>
+
+                        <div class="mobrec"> 
+                          <img src="img/camera1.png" class="cam1" alt="my camera"></div> 
+
+                               <div class="rectan6">
+                                    <p class="text5">Stefanie Mendoza</p></div>
+
+                         <div class="rectan7"> 
+                                <img src="img/screen1.png" class="screen" alt="screen">
+                                    <p class="col-lg-9 about"> <br><br> If I’m not designing, I’m scrolling on Pinterest, dreaming about spicy foods, and doodling. <br><br> If its non of the above, then I’m probably watching cat or street food videos on Youtube. <br><br> Hobbies may include: Photography, painting, thrifting and making taro milk tea. </p> </div>
+
+                        <div class="rectan9"> 
+                              <img src="img/laptop.png" class="laptop" alt="laptop sketch"> </div>
+                              <img src="img/remind1.png" class="remind" alt="reminder sticky note">
+                              <p class="goals"> Design without inhibitions </p>
+                             <div class="rectan8"> </div>
+                        </div> 
+                  </div>
+            </div>
+            <!---------------section ends here --------------->
+
+            <div class="whitespace"></div>
+
+            <!--------------- footer starts here --------------->
+            <div class="footer">
+                  <div class="container">
+                      
+                        <div class="info">
+                              <div class="row">
+
+                                    <div class="col-lg-12" id="address">
+                                          <p class="wow fadeInUp" data-wow-delay="0.2s">Contact &nbsp -><a href = "mailto: svm005@ucsd.edu" style="color:#fff "> ✉ Email </a> <a href="https://www.linkedin.com/in/stefanie-m-3b4832183/" target="_blank" style="color:#fff  "> &nbsp -> linkedin</a></p>
+                                        
+                                    <div class="col-lg-3" id="personal">
+                                          <h4 class="wow fadeInUp" data-wow-delay="0s">Made with ♡ by Stefanie</h4>
+                                          <br><br>
+                                    </div>
+                                        
+                                          <br><br>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+
+            <!--------------- footer ends here --------------->
+
+
+      </div>
+</div>
+      <!-- greensock cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script type="text/javascript">
+
+      // navigation starts here
+      $("#toggle").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $("#resize ul li a").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $(".close-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      // navigation ends here
+
+      // nav animation
+
+      TweenMax.from("#brand", 1, {
+            delay: 0.4,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.staggerFrom("#menu li a", 1, {
+            delay: 0.4,
+            opacity: 0,
+            ease: Expo.easeInOut
+      }, 0.1);
+
+      // nav animation ends
+
+      new WOW().init();
+
+
+      </script>
+</body>
+</html>
