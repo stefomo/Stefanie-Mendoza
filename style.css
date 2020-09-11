@@ -259,12 +259,17 @@ li:active .here {
   }
 
   .container1 h3{
-    font-size: 50px;
+    font-size: 55px;
     display: flex;
     flex-flow: column wrap;
     margin-top: -10%;
 }
 
+@media(max-width: 1024px) {
+  .container1 h3{
+    font-size: 45px;
+  }
+  }
 @media(max-width: 768px){
   .container1 h1{
     padding-top: 25%;
@@ -296,6 +301,7 @@ li:active .here {
     padding-top: 5%;
   }
 }
+
 /*------------------- img homepage -------------- */
 /* artwrk 1*/
 .ticket {
@@ -331,7 +337,7 @@ li:active .here {
       height: 40px;
       width: 40px;
       margin-top: -1%;
-      margin-left: 57%; 
+      margin-left: 56%; 
 } 
 
 .img4{
@@ -433,7 +439,7 @@ li:active .here {
 .scroll{
   position: absolute;
   left: 50%;
-  bottom: 50px;
+  bottom: 60px;
   display: block;
   text-align: center;
   width: 30px;
@@ -454,14 +460,14 @@ li:active .here {
             opacity: 0;
       }
 }
-@media(max-width: 768px){
-  .scroll-down{
-    top: 90%;
+@media(max-width: 1024px){
+  .scroll{
+    display: none;
   }
 }
 
 @media(max-width: 480px){
-  .scroll-down{
+  .scroll{
     top: 75%;
   }
 }
@@ -472,6 +478,11 @@ h2{
 }
 
 /*--------------- projects section --------------- */
+@media (min-width: 1024px){
+  .two{
+    left: 70%;
+  }
+
 .container{
       width: 100%;
       margin: 10% auto;
@@ -487,7 +498,7 @@ img {
 }
 
 .text-1 {
-      top: 120px;
+      top: 40px;
       left: -5px;
       font-size: 50px;
 }
@@ -512,27 +523,34 @@ img {
       -webkit-filter: grayscale(100%);/* Chrome, Safari, Opera */
       filter: grayscale(100%);
 }
-.one:hover{
+.one:hover, .text-1:hover{
     -webkit-filter:none ;/* Chrome, Safari, Opera */
     filter: grayscale(0%);
 }
 .one:hover ~ .text-1{
   color: #90BBC1;
 }
+.text-1:hover{
+  color: #90BBC1;
+}
 
 /*rutina*/
 .two{
-
   -webkit-filter: grayscale(100%);/* Chrome, Safari, Opera */
   filter: grayscale(100%);
+
 }
-.text-2:hover {
-  color: #ED9B72;
-}
-.text-2:hover ~ .two{
+.two:hover{
     -webkit-filter:none ;/* Chrome, Safari, Opera */
     filter: grayscale(0%);
 }
+.two:hover ~ .text-2 {
+  color: #ED9B72;
+}
+.text-2:hover{
+  color: #ED9B72;
+}
+
 
 /*fitbuddy*/
 .three {
@@ -548,12 +566,12 @@ img {
     -webkit-filter:none ;/* Chrome, Safari, Opera */
     filter: grayscale(0%);
 }
-/*
+
 .three:hover{
     -webkit-filter:none ;/* Chrome, Safari, Opera */
     filter: grayscale(0%);
 }
-/*
+
 .three:hover ~ .text-3{
   color: #9DD7EA;
 }
@@ -579,7 +597,7 @@ img {
       top: -750px;
 }
 */
-
+/*
 @media(max-width: 768px) {
       .container {
             width: 90% !important;
@@ -587,17 +605,13 @@ img {
             margin-top: 40%;
       }
 
-      .vertical {
-            display: none;
-      }
-
       .one::after, .two::after, .three::after{
             display: none;
       }
-      .text-2{
-        left: 10px;
+      .two{
+        left: 1%;
       }
-}
+}*/
 /*  --------------- footer --------------------*/
 .collab {
       text-align: right;
