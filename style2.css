@@ -254,67 +254,133 @@ li:active .here {
 }
 
 /*-------------------- FITBUDDY  ------------ */
-.fbfirst{
+.container{
+  width: 100%;
+}
+.project-image{
   width: 100%
 }
 /* titles*/
 .titF{
   font-size: 80px;
-  color: #FFBA07;
+  color: #03204F;
 }
 
 .titF2{
   margin-top: -5%;
-  color: #9BD7EE;
+  color:#03204F;
 }
-.homeph{
-  width: 20%;
+.scope{
+  margin-top: -1%;
+
+}
+/*fitbuddy scope*/
+.tt{
+  font-size: 20px;
+   color:#03204F;
+  
+}
+.vl { /*space bw image and text*/
+  border-left: 30px solid #F8F8F8;
+  height: 450px;
   float: left;
-  margin-left: 22%;
 }
-.prev{
- float: right;
- margin-top: 2%;
- margin-right: 15%;
+hr{
+  width: 80%;
 }
-li span{
-  display: inline-block;
+/*1st paragraph */
+.para1{
+  font-size: 17px;
+  font-family: Apercu, Mabry, sans-serif;
 }
+.para2{
+  font-size: 17px;
+  font-family: Apercu, Mabry, sans-serif;
+}
+.para3{
+  font-size: 14px;
+  font-family: Apercu, Mabry, sans-serif;
+}
+.ls li{
+  font-size: 17px;
+}
+
+/* title end */
+
+.homeph{
+  width: 25%;
+  float: left;
+  margin-left: 25%;
+}
+
 .title{
   font-size: 20px;
   color: #03204F;
 }
-
-.udraw1{
-  width: 28%;
-  margin-left: 55%;
-  margin-top: -20%;
-  margin-bottom: 10%;
+/* overview titles */
+.txt{
+  font-size: 35px;
+  float: right;
 }
+.txt1{
+  font-size: 35px;
+  margin-left: -10%;
+}
+.rutinatxt{
+  color: #ED8888;
+}
+.fitbtxt{
+  color: #007AFF;
+}
+
 .overview{
   margin: 18%;
   margin-top: -3%;
 }
-.para1{
-  font-size: 20px;
-  font-family: Apercu, Mabry, sans-serif;
-  margin-top: 5%;
-}
+
 .fbphone1{
   width: 25%;
   float: left;
 }
-.overr{
-  margin-left: 2%;
+.rutphone1{
+  width: 35%;
+  float: left;
 }
+
+.highlight {
+background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #DEEBE1 50%);
+}
+.highlight1 {
+background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FDEBB9 50%);
+}
+.highlight2 {
+background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #CFEBF4 50%);
+}
+
+
+.storyboard{
+  width: 120%;
+  margin-left: -10%;
+}
+.sp{
+  margin-left: 11%;
+  font-size: 13px;
+}
+.pp1{
+  font-size: 13px;
+}
+.ppa{
+  width: 100%;
+}
+
 /*----- */
 h4{
 margin-bottom: 5%;
 }
-.here1{
+.link{
   color: #FFBA07;
 }
-.here1:hover{
+.link:hover{
   color:#9BD7EE;
 }
 .problem{
@@ -339,9 +405,7 @@ margin-bottom: 5%;
 /*--------------------------RUTINA------------------------*/
 /*--------------------------RUTINA------------------------*/
 /*--------------------------RUTINA------------------------*/
-.rut{
-  width: 100%;
-}
+
 .titR{
   color: #EC9482;
   font-size: 80px;
