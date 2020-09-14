@@ -12,6 +12,10 @@ html, body {
       width: 100%;
       height: 100px;
 }
+.whitespace1 {
+      width: 100%;
+      height: 50px;
+}
 
 @media(max-width: 768px) {
       .whitespace {
@@ -20,43 +24,30 @@ html, body {
 }
 
 @font-face {
-      src: url(fonts/MabryPro-Regular.ttf);
+      src: url(fonts/190reg.ttf);
       font-family: Mabry;
 }
 
 @font-face {
-      src: url(fonts/0pposit-regular.ttf);
+      src: url(fonts/opp180reg.ttf);
       font-family: opposit;
 }
 
 @font-face {
-      src: url(fonts/Opposit-SemiBold.ttf);
+      src: url(fonts/opp181B.ttf);
       font-family: opposit-sb;
 }
 
-@font-face {
-      src: url(fonts/AttilaSansBasic-Semibold.ttf);
-      font-family: Attila;
-}
 @font-face {
       src: url(fonts/Apercu.ttf);
       font-family: Apercu;
 }
 
-/*cursor*/
-body .cursor {
-  pointer-events: none;
+@font-face {
+      src: url(fonts/Apercu.ttf);
+      font-family: Apercu;
 }
-body .cursor__ball {
-  position: fixed;
-  top: 0;
-  left: 0;
-  mix-blend-mode: difference;
-  z-index: 1000;
-}
-body .cursor__ball circle {
-  fill: #f7f8fa;
-}
+
 /*--------------- navigation --------------- */
 nav {
       width: 100%;
@@ -257,9 +248,10 @@ li:active .here {
 .container{
   width: 100%;
 }
-.project-image{
+.img{
   width: 100%
 }
+
 /* titles*/
 .titF{
   font-size: 80px;
@@ -285,14 +277,15 @@ li:active .here {
   height: 450px;
   float: left;
 }
+.vl2 { /*space bw image and text*/
+  border-left: 20px solid #F8F8F8;
+  height: 130px;
+  float: left;
+ }
 hr{
   width: 80%;
 }
 /*1st paragraph */
-.para1{
-  font-size: 17px;
-  font-family: Apercu, Mabry, sans-serif;
-}
 .para2{
   font-size: 17px;
   font-family: Apercu, Mabry, sans-serif;
@@ -315,22 +308,23 @@ hr{
 
 .title{
   font-size: 20px;
-  color: #03204F;
+   color: #03204F;
 }
 /* overview titles */
 .txt{
-  font-size: 35px;
+  font-size: 30px;
   float: right;
+
 }
 .txt1{
-  font-size: 35px;
+  font-size: 30px;
   margin-left: -10%;
 }
 .rutinatxt{
   color: #ED8888;
 }
 .fitbtxt{
-  color: #007AFF;
+  color: #03204F;
 }
 
 .overview{
@@ -357,20 +351,32 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FDEBB9 50%);
 background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #CFEBF4 50%);
 }
 
-
 .storyboard{
   width: 120%;
   margin-left: -10%;
 }
-.sp{
-  margin-left: 11%;
-  font-size: 13px;
+/*user testing kal*/
+.avatar{
+	width: 15%;
+	float: left;
 }
-.pp1{
-  font-size: 13px;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
-.ppa{
-  width: 100%;
+.ph{
+	width: 30%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+.ph1{
+	width: 80%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
 }
 
 /*----- */

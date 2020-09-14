@@ -26,19 +26,20 @@ html, body {
 }
 
 @font-face {
-      src: url(fonts/MabryPro-Regular.ttf);
+      src: url(fonts/190reg.ttf);
       font-family: Mabry;
 }
 
 @font-face {
-      src: url(fonts/0pposit-regular.ttf);
+      src: url(fonts/opp180reg.ttf);
       font-family: opposit;
 }
 
 @font-face {
-      src: url(fonts/Opposit-SemiBold.ttf);
+      src: url(fonts/opp181B.ttf);
       font-family: opposit-sb;
 }
+
 @font-face{
       src: url(fonts/Andale-Mono.ttf);
       font-family: Andale;
@@ -362,7 +363,7 @@ li:active .here {
     margin-top: 3%;
   }
   .about{
-    margin-top: -60%;
+    margin-top: -70%;
     margin-left: 10%;
     font-family: Andale, Mabry, sans-serif;
     font-size: 15px;
