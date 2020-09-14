@@ -22,20 +22,19 @@ html, body {
 }
 
 @font-face {
-      src: url(fonts/MabryPro-Regular.ttf);
+      src: url(fonts/190reg.ttf);
       font-family: Mabry;
 }
 
 @font-face {
-      src: url(fonts/0pposit-regular.ttf);
+      src: url(fonts/opp180reg.ttf);
       font-family: opposit;
 }
 
 @font-face {
-      src: url(fonts/Opposit-SemiBold.ttf);
+      src: url(fonts/opp181B.ttf);
       font-family: opposit-sb;
 }
-
 
 /*
 .cursor--outer {
@@ -442,7 +441,7 @@ li:active .here {
   bottom: 60px;
   display: block;
   text-align: center;
-  width: 30px;
+  width: 40px;
   -webkit-transform: translate(-50%, 0) rotate(90deg);
    animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
