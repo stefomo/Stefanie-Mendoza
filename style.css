@@ -525,6 +525,7 @@ img {
 .one:hover, .text-1:hover{
     -webkit-filter:none ;/* Chrome, Safari, Opera */
     filter: grayscale(0%);
+    cursor: pointer;
 }
 .one:hover ~ .text-1{
   color: #90BBC1;
@@ -542,12 +543,14 @@ img {
 .two:hover{
     -webkit-filter:none ;/* Chrome, Safari, Opera */
     filter: grayscale(0%);
+    cursor: pointer;
 }
 .two:hover ~ .text-2 {
   color: #ED9B72;
 }
 .text-2:hover{
   color: #ED9B72;
+  cursor: pointer;
 }
 
 
@@ -560,6 +563,7 @@ img {
 }
 .text-3:hover {
   color: #9DD7EA;
+  cursor: pointer;
 }
 .text-3:hover ~ .three{
     -webkit-filter:none ;/* Chrome, Safari, Opera */
@@ -569,6 +573,7 @@ img {
 .three:hover{
     -webkit-filter:none ;/* Chrome, Safari, Opera */
     filter: grayscale(0%);
+    cursor: pointer;
 }
 
 .three:hover ~ .text-3{
