@@ -273,7 +273,7 @@ li:active .here {
   
 }
 .vl { /*space bw image and text*/
-  border-left: 30px solid #F8F8F8;
+  border-left: 10px solid #F8F8F8;
   height: 450px;
   float: left;
 }
@@ -301,7 +301,7 @@ hr{
 /* title end */
 
 .homeph{
-  width: 25%;
+  width: 30%;
   float: left;
   margin-left: 25%;
 }
@@ -378,7 +378,13 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #CFEBF4 50%);
   	margin-left: auto;
   	margin-right: auto;
 }
-
+.styleguide{
+  width: 120%;
+  margin-left: -10%;
+}
+.finalgif{
+  width: 30%;
+}
 /*----- */
 h4{
 margin-bottom: 5%;
