@@ -286,8 +286,12 @@ hr{
   width: 80%;
 }
 /*1st paragraph */
-.para2{
+.para1{
   font-size: 17px;
+  font-family: Apercu, Mabry, sans-serif;
+}
+.para2{
+  font-size: 19px;
   font-family: Apercu, Mabry, sans-serif;
 }
 .para3{
@@ -406,9 +410,11 @@ margin-bottom: 5%;
 .dp1{
   width: 100%;
 }
-/*
+/*--------------------------NAV------------------------*/
+/*--------------------------PREV------------------------*/
+/*--------------------------NEXT-----------------------*/
 .prev1{
-    font-size: 20px;
+    font-size: 15px;
 }
 .next2{
     font-size: 20px;
@@ -424,5 +430,29 @@ margin-bottom: 5%;
 }
 .titR1{
   color: #FFC653;
+  margin-top: -5%;
+}
+/*--------------------------INSU------------------------*/
+/*--------------------------INSU------------------------*/
+/*--------------------------INSU-----------------------*/
+.titI{
+  color: #41948E;
+  font-size: 90px;
+}
+.titI2{
+  margin-top: -5%;
+  color: #41948E;
+  font-size: 30px;
+}
+.link1{
+  color: #41948E;
+}
+.link1:hover{
+  color: #41948E;
+}
+.process1{
+  margin: 10%;
+  margin-top: -1%;
+
 }
 
