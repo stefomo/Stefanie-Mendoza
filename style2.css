@@ -352,7 +352,7 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #DEEBE1 50%);
 background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FDEBB9 50%);
 }
 .highlight2 {
-background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #CFEBF4 50%);
+background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #EECCC2 50%);
 }
 
 .storyboard{
@@ -430,8 +430,29 @@ margin-bottom: 5%;
 }
 .titR1{
   color: #FFC653;
-  margin-top: -5%;
+  margin-top: -4%;
 }
+/*rutina scope*/
+.tt1{
+  font-size: 20px;
+}
+.process2{
+  margin-left: 22%;
+
+}
+.quote{
+  width: 80%;
+}
+.link1{
+  color: #41948E;
+}
+.link1:hover{
+  color: #41948E;
+}
+.hr1{
+  width: 70%;
+}
+
 /*--------------------------INSU------------------------*/
 /*--------------------------INSU------------------------*/
 /*--------------------------INSU-----------------------*/
@@ -444,15 +465,10 @@ margin-bottom: 5%;
   color: #41948E;
   font-size: 30px;
 }
-.link1{
-  color: #41948E;
-}
-.link1:hover{
-  color: #41948E;
-}
 .process1{
   margin: 10%;
-  margin-top: -1%;
-
+  margin-top: 1%;
 }
-
+.txt2{
+  font-size: 25px;
+}
