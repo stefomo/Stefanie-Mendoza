@@ -443,18 +443,23 @@ margin-bottom: 5%;
 .quote{
   width: 80%;
 }
-.link1{
-  color: #41948E;
-}
-.link1:hover{
-  color: #41948E;
-}
+
 .hr1{
   width: 70%;
 }
 .rutgif{
   width: 30%;
 }
+.link2{
+  color: #EC9482;
+}
+.link2:hover{
+  color: #FFC653;
+}
+.center2{
+  margin-left: 25%;
+} 
+
 /*--------------------------INSU------------------------*/
 /*--------------------------INSU------------------------*/
 /*--------------------------INSU-----------------------*/
@@ -473,4 +478,10 @@ margin-bottom: 5%;
 }
 .txt2{
   font-size: 25px;
+}
+.link1{
+  color: #41948E;
+}
+.link1:hover{
+  color: #41948E;
 }
