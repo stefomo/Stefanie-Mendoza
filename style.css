@@ -258,7 +258,7 @@ li:active .here {
   }
 
   .container1 h3{
-    font-size: 55px;
+    font-size: 50px;
     display: flex;
     flex-flow: column wrap;
     margin-top: -10%;
