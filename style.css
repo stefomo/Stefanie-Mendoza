@@ -477,11 +477,6 @@ h2{
 }
 
 /*--------------- projects section --------------- */
-@media (min-width: 1024px){
-  .two{
-    left: 70%;
-  }
-
 .container{
       width: 100%;
       margin: 10% auto;
@@ -516,6 +511,7 @@ img {
   font-size: 20px;
   font-family: opposit-sb;
 }
+
 /*insulearn*/
 .one {
       margin-top: 100px;
@@ -616,6 +612,8 @@ img {
         left: 1%;
       }
 }*/
+
+
 /*  --------------- footer --------------------*/
 .collab {
       text-align: right;
