@@ -499,7 +499,8 @@ img {
 
 .text-2 {
       z-index: 2;
-      top: 10px;
+      top: -150px;
+      left: 100px;
       font-size: 90px;
 }
 .text-3 {
@@ -532,6 +533,7 @@ img {
 
 /*fitbuddy*/
 .two{
+  margin-left: 60%;
   -webkit-filter: grayscale(100%);/* Chrome, Safari, Opera */
   filter: grayscale(100%);
 
@@ -576,6 +578,22 @@ img {
    color: #ED9B72;
 }
 
+@media(max-width: 768px) {
+  .text-2 {
+      z-index: 2;
+      top: 10px;
+      left: 1px;
+      font-size: 80px;
+  }
+  .text-3 {
+      top: 10px;
+      left: 10px;
+      font-size: 80px;
+  }
+  .two{
+      margin-left: 1%;
+  }
+}
 /*
 .four {
       margin-top: -400px;
