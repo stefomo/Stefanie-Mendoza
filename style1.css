@@ -1392,8 +1392,8 @@ li:active .here {
 
   .door{
     margin-left: 35%;
-    margin-top: 10%;
-    width: 30%;
+    margin-top: 13%;
+    width: 25%;
   }
   .text1{
    display: none;
@@ -1401,7 +1401,7 @@ li:active .here {
   .text11{
     font-family: opposit-sb, mabry, sans-serif;
     color: white;
-    margin-top: -80%;
+    margin-top: -70%;
     margin-left: 30%;
   }
 
@@ -1431,9 +1431,9 @@ li:active .here {
     margin-top: -389%;
   }
   .text5{
-    font-size: 55px;
+    font-size: 40px;
     margin-left: 20%;
-    margin-top: 45%;
+    margin-top: 80%;
     font-family: Opposit-sb, Mabry, sans-serif;
     writing-mode: vertical-rl;
   }
@@ -1466,6 +1466,7 @@ li:active .here {
     width: 95%;
     margin-left: 5%;
     margin-top: 15%;
+
   }
   
    /*box3 cam */
@@ -1493,7 +1494,7 @@ li:active .here {
     border: 1px white;
     border-style: hidden solid hidden hidden;
     margin-left: -39%;
-    margin-top: 147%;
+    margin-top: 170%;
   }
 
   .screen{
@@ -1502,7 +1503,7 @@ li:active .here {
   .about{
     margin-left: 3%;
     font-family: Andale, Mabry, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
   }
   /* box 8 img */
   .rectan9{
@@ -1513,6 +1514,7 @@ li:active .here {
     width: 72%;
     height: 245px;
   }
+  
   .laptop{
     width: 80%;
     margin-top: 40%;
@@ -1707,3 +1709,4 @@ li:active .here {
     margin-top: -10%;
   } 
 }
+
