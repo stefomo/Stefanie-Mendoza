@@ -347,7 +347,10 @@ li:active .here {
       margin-top: -15%;
       margin-left: -5%;        
 }
-
+.hello{
+  width: 3%;
+  margin-top: -0.5%;
+}
 @keyframes blink {
     0% {
         opacity: 1;

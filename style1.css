@@ -228,7 +228,10 @@ li:active .here {
       text-align: left;
       font-size: 20px;
 }
-
+.hello{
+  width: 5%;
+  margin-top: -0.5%;
+}
 
 @media(max-width: 768px) {
       .collab, #personal, #media, #address {
