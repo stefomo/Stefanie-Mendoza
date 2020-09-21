@@ -240,7 +240,7 @@ li:active .here {
             padding: 0;
       }
 }
-
+      
 /*--------------------------------  
 ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops ------------------------------- */
@@ -399,6 +399,9 @@ li:active .here {
     display: none;
   }
 }
+.t5{
+  display: none;
+}
 /*------- ##Device = Laptops, Desktops----------------------------------*/
 @media (min-width: 1025px) and (max-width: 1280px) {
   .rectan {
@@ -556,6 +559,9 @@ li:active .here {
   .mobrec{
     display: none;
   }
+  .t5{
+  display: none;
+}
 }
 
 /*desktop */
@@ -718,6 +724,9 @@ li:active .here {
   .mobrec{
     display: none;
   }
+  .t5{
+  display: none;
+}
 }
 /*--------------- smaller ----------------*/
 @media (min-width: 481px) and (max-width: 765px) {
@@ -885,6 +894,9 @@ li:active .here {
     margin-left: -10%;
     margin-top:-30%;
   } 
+  .t5{
+  display: none;
+  }
 }
 
 /*-------------------------     ##Device = Tablets, Ipads (portrait)
@@ -1046,6 +1058,9 @@ li:active .here {
   .mobrec{
     display: none;
   }
+  .t5{
+  display: none;
+}
 }
 
 
@@ -1208,6 +1223,9 @@ li:active .here {
   .mobrec{
     display: none;
   }
+  .t5{
+  display: none;
+}
 }
 /*------------------landscape----------*/
 @media only screen 
@@ -1369,6 +1387,9 @@ li:active .here {
   .mobrec{
     display: none;
   }
+  .t5{
+  display: none;
+}
 }
 
 /*-------------------------     iphone x, galaxy 5  --------------------------*/
@@ -1430,13 +1451,18 @@ li:active .here {
     margin-left: -39.5%;
     margin-top: -389%;
   }
-  .text5{
-    font-size: 30px;
-    margin-left: 10%;
-    margin-top: 120%;
-    font-family: Opposit-sb, Mabry, sans-serif;
+   .t5{
     writing-mode: vertical-rl;
+    color: white;
+    font-size: 55px;
+    margin-left: 10%;
+    margin-top: 200%;
+   font-family: Opposit-sb, Mabry, sans-serif;
+}
+  .text5{
+    display: none;
   }
+
   /* box4 about text */
   .rectan4{
     width: 129%;
@@ -1717,5 +1743,8 @@ li:active .here {
     margin-left: -10%;
     margin-top: -10%;
   } 
+  .t5{
+  display: none;
+}
 }
 
