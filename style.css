@@ -292,12 +292,14 @@ li:active .here {
     padding-top: -5%;
   }
   .container1 h2{
-    font-size: 23px;  
+    font-size: 24px;  
     padding-top: 15%;
+    margin-left: -1%;
   }
   .container1 h3{
     font-size: 25px;
     padding-top: 5%;
+
   }
 }
 
@@ -424,10 +426,10 @@ li:active .here {
 	/*smart phones */
 @media(max-width: 480px) {
   .ticket{
-    margin-left: -5%;
+    margin-left: 2%;
   }
   .img3{
-    margin-left: 80%;
+    margin-left: 85%;
   }
   .img4{
     left: -1%;
