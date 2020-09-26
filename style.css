@@ -309,7 +309,7 @@ li:active .here {
        height: 18em;
        width: 23em;
        margin-left: 55%;
-       margin-top: -21%;
+       margin-top: -18%;
 }
 /*stars*/
 .img1{
@@ -337,8 +337,8 @@ li:active .here {
 .img3{
       height: 40px;
       width: 40px;
-      margin-top: -1%;
-      margin-left: 56%; 
+      margin-top: 1%;
+      margin-left: 54%; 
 } 
 
 .img4{
