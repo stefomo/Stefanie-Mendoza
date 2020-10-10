@@ -358,6 +358,7 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FDEBB9 50%);
 background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #EECCC2 50%);
 }
 
+
 .storyboard{
   width: 120%;
   margin-left: -10%;
@@ -487,4 +488,7 @@ margin-bottom: 5%;
 }
 .link1:hover{
   color: #41948E;
+}
+.highlight3 {
+background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
 }
