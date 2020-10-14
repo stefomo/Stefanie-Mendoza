@@ -485,10 +485,18 @@ margin-bottom: 5%;
 }
 .link1{
   color: #41948E;
+  font-size: 20px;
 }
 .link1:hover{
   color: #41948E;
 }
 .highlight3 {
 background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
+}
+.tp{
+  width: 90%;
+}
+.figure{
+  color: #bfbfbf;
+  font-size: 13px;
 }
