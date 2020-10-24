@@ -497,8 +497,8 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
   width: 90%;
 }
 .figure{
-  color: #bfbfbf;
-  font-size: 13px;
+  color: #595959;
+  font-size: 14px;
 }
 .quotes{
   color: #41948E;
@@ -508,6 +508,7 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
 .pp{
   font-size: 13px;
 }
+
 
 
 
