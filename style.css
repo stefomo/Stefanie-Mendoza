@@ -302,7 +302,22 @@ li:active .here {
 
   }
 }
-
+/*large desktop*/
+@media screen and (min-width: 1900px) {
+  .container1 h1{
+    font-size: 80px;
+    padding-top: -5%;
+  }
+  .container1 h2{
+    font-size: 80px;  
+    padding-top: 5%;
+    margin-left: -1%;
+  }
+  .container1 h3{
+    font-size: 70px;
+    padding-top: -5%;
+  }
+}
 /*------------------- img homepage -------------- */
 /* artwrk 1*/
 .ticket {
@@ -439,6 +454,20 @@ li:active .here {
     width: 25px;
   }
 }
+
+/*large desktop*/
+@media screen and (min-width: 1900px) {
+    .ticket{
+    margin-left: 55%;
+    height: 22em;
+    width: 27em;
+  }
+  .img4{
+    left: -1%;
+    width: 25px;
+  }
+}
+
 /*---------------- scroll down icon animation --------------- */
 .scroll{
   position: absolute;
