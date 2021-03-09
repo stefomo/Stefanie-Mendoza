@@ -485,6 +485,7 @@ margin-bottom: 5%;
 }
 .link1{
   color: #41948E;
+  font-size: 20px;
 }
 .link1:hover{
   color: #41948E;
@@ -492,3 +493,28 @@ margin-bottom: 5%;
 .highlight3 {
 background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
 }
+.tp{
+  width: 90%;
+}
+.figure{
+  color: #595959;
+  font-size: 14px;
+}
+.quotes{
+  color: #41948E;
+  font-size: 19px;
+  font-style: italic;
+}
+.pp{
+  font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
