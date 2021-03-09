@@ -665,7 +665,61 @@ img {
       }
 }*/
 
+/*  --------------- footer --------------------*/
+.ph1{ /*beach*/
+  width: 60%;
+  margin-left: 30%;
+}
+.ph2{ /*tower*/
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 20%;
+}
+.ph3{ /*3rd photo dude*/
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+.ph4{ /*flower*/
+  width: 80%;
+  margin-left: 90%;
+  margin-top: 5%;
 
+}
+.ph5{ /*2nd photo flora*/
+  width: 90%;
+  margin-left: 80%;
+  margin-top: 5%;
+}
+/*-------------*/
+@media(max-width: 768px) {
+
+.ph1{ /*beach*/
+  width: 60%;
+  margin-left: 20%;
+}
+.ph2{ /*tower*/
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.ph3{ /*3rd photo dude*/
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.ph4{ /*flower*/
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+
+}
+.ph5{ /*2nd photo flora*/
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  }
+}
 /*  --------------- footer --------------------*/
 .collab {
       text-align: right;
