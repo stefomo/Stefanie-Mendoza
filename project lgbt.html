@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="UX/UI, Product Design Portfolio">
+      <meta name="author" content="Stefanie Mendoza">
+
+      <title>Stefanie Mendoza</title>
+      <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+      <!-- bootstrap cdns -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <!-- for on scroll animations -->
+      <link rel="stylesheet" href="animate.css">
+      <script src="wow.min.js"></script>
+
+       <!-- stylesheet -->
+      <link rel="stylesheet" href="style2.css">
+      <style>
+      * {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+</style>
+</head>
+<body>
+      <div class="wrapper">
+
+             <nav>
+                  <ul id="menu">
+                  <li> <a href="index.html">Designs</a> <span class="here"> -> </span> </li> 
+                  <li><a href="about.html">About</a> <span class="extra"> -> </span> </li>
+                  
+                  <li><a href="img/Stef_Mendoza.pdf" target="_blank">Resume</a> <span class="extra"> -> </span> </li>
+
+                   <li> <a href="photography.html">Photography</a> <span class="extra"> -> </span> </li> 
+
+                  </ul>
+
+                  <div id="toggle">
+                        <div class="span">menu</div>
+                  </div>
+
+            </nav>
+
+            <div id="resize">
+                  <div class="close-btn">close</div>
+
+                  <ul id="menu">
+                        <li><a href="index.html">Designs</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="img/Stef_Mendoza.pdf" target="_blank">Resume</a></li>
+                        <li><a href="photography.html">Photography</a></li>
+                  </ul>
+            </div>
+            <!--------------- navbar----------------------------->
+
+            <div class="whitespace1"></div>
+
+            <!--------------- Introduction --------------->
+            <div class="container">
+          <br><br>
+            <div class="row">
+                 <div class="col-lg-12">
+                    <img src="img/lgbt/lgbt1.png" class="fdf img wow fadeInUp" data-wow-delay="1s" alt="insulearn project image overview">
+                        <br><br><br>
+                          <h1 class=" titL wow fadeInUp" data-wow-delay="1s"><center>LGBT</center></h1><br><br>
+                          <h4 class=" titL2 wow fadeInUp" data-wow-delay="1s"> <center>Community Network</center></h4>
+
+                          <p class="scope"><center><span class ="tt">Scope:</span> Web Design and Development (in Wordpress) &emsp; <span class ="tt">Duration:</span> APR - JUN '21 
+                            <br> <br><span class ="tt">Team:</span> Product Managers: Stefanie Mendoza & Ankita Bantey<br> Designers: Reese R. Aivy P., Jonathan L., & Vylam V.</center> </p> <br> 
+                    </div>
+
+		<!--- overview--->
+          <div class="whitespace"></div>
+         <div class="col-lg-8 center">
+             <h1 class=" txt1"> <span class="highlight4">Project Summary</span></h1> <br>
+
+                   <p class="para1"><p class="para1"><b>The LGBT Community Network is a nonprofit that works to support lesbian, gay, bisexual, transgender communities all across California State.</b>
+                   The original LGBT Community website was hard to navigate, resulting in low online engagement. This project required a complete website redesign - with an intuitive, highly customizable website-building tool - for LGBT Community. The design team added new features that are approved by the client - such as a leadership page, events page, and organization highlights. The new website includes additional information from the previous website and encourages website visitors to get involved with the LGBT Community Network. The redesigned website is also easy for the executive board to edit and maintain.
+                   </p><br><br>
+                   <a href="https://lgbtcn.org/" class="link2" target="_blank"> <i>Check out the updated website here</i></a> 
+               </div>
+
+      		<!--- background--->
+          <div class="whitespace"></div>
+         <div class="col-lg-8 center">
+             <h1 class=" txt1"> <span class="highlight4">Background </span></h1> <br>
+
+                   <p class="para1"><p class="para1">The LGBT Community Network aims to enhance the well-being of the lesbian, gay, bisexual, transgender communities by providing activities, programs and services that create and support community; empower community members; provide essential resources; and embrace, promote and support cultural diversity.</p><br><br>
+                   	<img src="img/lgbt/lgbtphoto1.png" class="img">
+                  </div><br><br>
+
+
+                  <div class="whitespace"></div> 
+
+                
+      <!--- Problem--->
+            <div class="col-lg-8 center">
+               <h1 class="txt1">Challenges</h1> <br>
+               <p class="para1">The project challenge was to redesign the current LGBT Community Network website to address the following pain points: 
+               <br><br>
+        <!---- 1--->
+              <p class="para1"><b> 1. Vague organization objectives </b><br><br>
+              
+         <!---- 2--->
+            <p class="para1"><b>2. Difficult to navigate the website</b><br><br>
+              
+         <!---- 3--->
+            <p class="para1"><b>3. Unclear/difficult website functionality and user flow</b><br><br>
+      
+        <!---- 4--->
+       <p class="para1"> 4. <b> Difficulty in understanding website content and purpose </b><br><br><br>
+               <div class="slideshow-container">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="img/lgbt/lgweb1.png" style="width:100%">
+            <div class="text">Home Screen</div>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="img/lgbt/lgweb0.png" style="width:100%">
+            <div class="text">Intro</div>
+          </div>
+
+           <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="img/lgbt/lgweb3.png" style="width:100%">
+            <div class="text">Servics</div>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="img/lgbt/lgweb2.png" style="width:100%">
+            <div class="text">About</div>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="img/lgbt/lgweb5.png" style="width:100%">
+            <div class="text">Donate</div>
+          </div>
+
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+          </div> <br>
+
+
+            <center><p class="figure">Fig. 1. Original Home/Umbrella Site for the LGBTCN.</p></center>
+               <br><br><br>
+            
+
+             
+      </div>
+      <div class="whitespace"></div>
+ <!--- User REsearch --->
+           <div class="col-lg-8 center">
+               <h1 class="txt1">Research Phase</h1> <br>
+
+                <h4 style="color: #F6891F;">Part 1</h4>
+               <p class="para1"> Our first phase of our redesign began with creating a CMS (Web Content Management) Comparison chart to provide our client with the best management system that would suit their needs. </p>
+               <br>
+               <img src="img/lgbt/cmschart.png" class="img"> 
+                <center><p class="figure">Fig. 2. Narrowed down version of our CMS Comparison Chart</p></center>
+               <br>
+               <p class="para1"> Due to Wordpress's capabilities to run a multisite network, integrate with third party tools easily (SEO tools), and offer a directory of plugins, the team and the client began the transfer from Joomla to Wordpress. <br><br>
+
+            <h4 style="color: #F6891F;">Part 2</h4>
+             <p class="para1"> To identify gaps within the website, our team conducted a Content Inventory and Audit to assess the current content of the website and review what information needed to be remove or updated. </p>
+               <br>
+               <img src="img/lgbt/cai.png" class="img">
+               <center><p class="figure">Fig. 3. Example of our Content Inventory</p></center>
+       
+ 		   </div>
+
+   <!--- User Interviews--->
+     <div class="whitespace"></div>
+         <div class="col-lg-8 center">
+             <h1 class=" txt1"> <span class="highlight4">User Interviews</span></h1> <br>
+             <p class="para1">The team conduct user interviews and developed a survey for volunteers and first time users on their experience with the network and the website. </p> <br><br>
+             <img src="img/lgbt/lgbtusers.png" class="img">
+             <center><p class="figure">Fig. 4. Preview of our synthesized user interview board</p></center>
+
+             <h5>Takeaways from user testing and early iterations:</h5><br>
+
+             </div>
+      <!--- Prototype --->
+        <div class="whitespace"></div>
+         <div class="col-lg-8 center">
+        <h1 class=" txt1"> <span class="highlight4">Prototype and Iterations</span></h1> <br>
+        <p class="para1">Working with various healthcare providers and people with diabetes, we were able to gain valuable insights that strengthened our prototypes. The team conducted four rounds of user testing over the course of a month.</p>
+        <img src="img/insu/Proto1.png" class="img" class="prototype Iterations"> <br><br>
+        <Center><p class="figure">Fig. 5. Four iterations of our prototype.</p></Center><br>
+        <img src="img/insu/Proto2.png" class="img" alt="features of our early prototype">
+        <Center><p class="figure">Fig. 6. Main features of our prototype.</p></Center><br><br>
+
+        <h5>Takeaways from user testing and early iterations:</h5><br>
+        <p class="para1"><b>1. Decrease Clicking</b><br>Information pop-ups were useful but increased clicking activity.</p><br>
+        <p class="para1"><b>2. Simplify User Interface</b><br>‍Tool should be intuitive without a tutorial, it should not further complicate the UX.</p><br>
+        <p class="para1"><b>3. Optimize Graphs</b><br>‍Graphs should be dynamic and match various insulin dose change scenarios.</p><br>
+        <p class="para1"><b>4. Visualize Insulin Activity</b><br>Showing the immediate effects of insulin pushing down on glucose levels is essential to understanding patterns.</p><br>
+
+        <p class="para1">Over four weeks of iterations, our team optimized the accuracy of our graphs, giving careful thought to terminology and providing context to the user for their best understanding.</p>
+        </div>
+
+         <!--- Final Prototype --->
+        <div class="whitespace"></div>
+         <div class="col-lg-8 center">
+        <h1 class=" txt1"> <span class="highlight4">Final Product</span></h1> <br>
+        <p class="para1">Our main goal was to provide the most simple image to users visually. Thanks to our testing we developed a clean design that highlighted concepts, separation, and clarity. </p> <br>
+        <img src="img/insu/Proto3.png" class="img"><br><br>
+         <Center><p class="figure">Fig. 7. InsuLearn's Insulin Timing and Dosing slider graph.</p></Center><br><br>
+          <img src="img/insu/proto4.png" class="img"><br><br>
+         <Center><p class="figure">Fig. 8. Provided users with a terminology page.</p></Center><br>
+         <p class="quotes">“These are all great topics to talk about but it seems like nobody teaches this well. They are good, basic, easy to understand definitions of diabetes...language seems really good.”</p> <p class="pp">-Participant, Endocrinology PA </p><br> </div>
+      <!--- Feedback --->
+         <div class="whitespace"></div>
+         <div class="col-lg-8 center">
+        <h1 class=" txt1"> <span class="highlight4">Performance</span></h1> <br>
+        <p class="para1">After our final round of user testing, we received overwhelming positive feedback from healthcare professionals and people living with diabetes.</p><br>
+
+       <p class="quotes">“I think it’s a really cool starting point, and I can see this playing out much [bigger]...it’s very cool and useful...I don’t know if there’s anything out there like this."</p> <p class="pp">-Participant L, NP, CDE </p><br> 
+
+        <p class="quotes">“This is also a great learning tool for health students, or anyone who’d have to care for someone with diabetes, for example, someone like a school nurse... This kind of module is simple enough that someone without diabetes could see what’s happening.” </p> <p class="pp">-Participant A, T1D and medical student</p><br> 
+
+       <p class="quotes">“I would love to share with [someone] newly diagnosed, new on insulin or weren’t understanding through other ways of learning. This would be a good first learning tool as well as supplementary learning tool."</p> <p class="pp">-Participant E, T1D and medical professional </p><br> </div>
+  <!--- Next Steps  --->
+        <div class="whitespace"></div>
+         <div class="col-lg-8 center">
+        <h1 class=" txt1"> <span class="highlight4">Next Steps</span></h1> <br>
+        <p class="para1"><b>InsuLearn is the first chapter of an interactive visual book on diabetes, created by the community, for the community.</b><br><br>
+      How else can we visualize to make diabetes management easier to understand? Moving forward, our users could see themselves using these tools to understand the multitude of factors in diabetes, such as the effects of exercise, complex meals, stress, pregnancy and menstrual cycles. <br><br>
+      There are infinite ways design could help in further visualizing and understanding diabetes. Everybody has different visions of what a great life looks like, and implementing tools that bring users’ goals to the forefront is essential.</p><br>
+       <a href="http://ddi.ucsd.edu/learn/graphs-menu.html" class="link1" target="_blank"> <i>Check out the tool here </i></a> 
+       </div>
+     </div>
+
+
+
+            <!--------------- project nav starts here ------------->
+      <div class="whitespace"></div>
+            <div class="project-nav">
+                  <div class="container">
+                        <div class="row">
+                          <div class="col-lg-12 prev1">
+                               <p> <a href="index.html" style="color:black"> <- Home </a> </p>
+                              </div>
+                              <div class="col-lg-12 next2">
+                                    <p> <a href="project fit.html" style="color:black"> Next Project -> </a> </p>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+             <!--------------- footer starts here --------------->
+           <div class="footer">
+                  <div class="container">
+                        <br><br>
+                        <div class="info">
+                              <div class="row">
+
+                                <div class="col-lg-12" id="address">
+                                          <p class="wow fadeInUp" data-wow-delay="0.2s"><img src ="img/hello1.png" class="hello" alt="eyes"/>&nbsp Contact &nbsp -><a href = "mailto: svm005@ucsd.edu" style="color:black"> &nbsp ✉ Email </a> <!--<a href="https://www.linkedin.com/in/stefanie-m-3b4832183/" target="_blank" style="color:white"> &nbsp -> linkedin</a> --></p>
+                                        
+                                    <div class="col-lg-3" id="personal">
+                                          <h4 class="wow fadeInUp" data-wow-delay="0s">Made with ♡ by Stefanie</h4>
+                                          <br><br>
+                                    </div>
+                                        
+                                          <br><br>
+                                    </div>
+                              </div>
+                        </div>
+              
+            <!--------------- footer ends here --------------->
+
+      </div>
+
+      <!-- greensock cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script type="text/javascript">
+
+      // navigation starts here
+      $("#toggle").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $("#resize ul li a").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $(".close-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      // navigation ends here
+
+      // nav animation
+
+      TweenMax.from("#brand", 1, {
+            delay: 0.4,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.staggerFrom("#menu li a", 1, {
+            delay: 0.4,
+            opacity: 0,
+            ease: Expo.easeInOut
+      }, 0.1);
+
+      // nav animation ends
+
+
+
+      new WOW().init();
+
+
+      </script>
+
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+</script>
+</body>
+</html>

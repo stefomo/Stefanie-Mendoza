@@ -1,4 +1,4 @@
-/*--------------- basic styling --------------- */
+/*--------------- basic styling FOR PROJECTS!--------------- */
 html, body {
       margin: 0;
       padding: 0;
@@ -508,13 +508,26 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
 .pp{
   font-size: 13px;
 }
+/*--------------------------LGBT------------------------*/
+/*--------------------------COMMUNITY------------------------*/
+/*--------------------------NETWORK-----------------------*/
 
-
-
-
-
-
-
+.titL{
+  color: #E94E51;
+  font-size: 60px;
+}
+.titL2{
+  margin-top: -5%;
+  color: #E94E51;
+  font-size: 40px;
+}
+.fdf{
+  border: 1px solid #F6891F;
+}
+.link2{
+  color: #E94E51;
+  font-size: 20px;
+}
 
 
 
