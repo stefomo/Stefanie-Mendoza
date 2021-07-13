@@ -359,6 +359,7 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #EECCC2 50%);
 }
 
 
+
 .storyboard{
   width: 120%;
   margin-left: -10%;
@@ -508,6 +509,14 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
 .pp{
   font-size: 13px;
 }
+/*fit--------*/
+
+.txt4{
+  font-size: 30px;
+  margin-left: -10%;
+  color: #5F9E41;
+}
+
 /*--------------------------LGBT------------------------*/
 /*--------------------------COMMUNITY------------------------*/
 /*--------------------------NETWORK-----------------------*/
@@ -527,6 +536,11 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
 .link2{
   color: #E94E51;
   font-size: 20px;
+}
+.txt5{
+  font-size: 30px;
+  margin-left: -10%;
+  color: #863292;
 }
 
 
