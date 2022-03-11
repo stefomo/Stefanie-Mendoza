@@ -69,6 +69,11 @@ html, body {
 } */
 
 /*--------------- navigation --------------- */
+.intro1{
+  visibility: hidden;
+  font-size: 1px;
+}
+
 nav {
       width: 100%;
       background: #0f0f0f;
