@@ -69,7 +69,10 @@ html, body {
 } */
 
 /*--------------- navigation --------------- */
-
+.intro1{
+ visibility: hidden;
+ margin-bottom: -30%;
+}
 nav {
       width: 100%;
       background: #0f0f0f;
