@@ -35,39 +35,6 @@ html, body {
       src: url(fonts/opp181B.ttf);
       font-family: opposit-sb;
 }
-
-/*
-.cursor--outer {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  border: 1px solid white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  position: fixed;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-  z-index: 11000;
-}
-/* Inner Cursor Circle *
-.cursor--inner {
-  width: 4px;
-  height: 4px;
-  position: fixed;
-  left: 10px;
-  top: 10px;
-  border-radius: 50%;
-  z-index: 11000;
-  background:#D39D71;
-}
-.link {
-  cursor: none; 
-  transition: opacity 1s;
-} */
-
 /*--------------- navigation --------------- */
 .intro1{
  visibility: hidden;
@@ -262,7 +229,7 @@ li:active .here {
   }
 
   .container1 h3{
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
     flex-flow: column wrap;
     margin-top: -10%;
@@ -356,7 +323,7 @@ li:active .here {
 .img3{
       height: 40px;
       width: 40px;
-      margin-top: 1%;
+      margin-top: 5%;
       margin-left: 54%; 
 } 
 
