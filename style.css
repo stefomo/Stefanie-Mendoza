@@ -508,6 +508,12 @@ img {
       left: 100px;
       font-size: 90px;
 }
+.text-4 {
+      z-index: 2;
+      top: -150px;
+      left: 100px;
+      font-size: 50px;
+}
 .text-3 {
       top: 100px;
       left: 10px;
@@ -517,6 +523,7 @@ img {
   font-size: 20px;
   font-family: opposit-sb;
 }
+
 
 /*insulearn*/
 .one {
@@ -553,6 +560,22 @@ img {
 }
 .text-2:hover{
    color: #9DD7EA;
+  cursor: pointer;
+}
+
+
+/*lgbt*/
+}
+.four:hover{
+    -webkit-filter:none ;/* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+.four:hover ~ .text-4 {
+   color: #ED9B72;
+}
+.text-4:hover{
+   color: #ED9B72;
   cursor: pointer;
 }
 
@@ -598,7 +621,14 @@ img {
   .two{
       margin-left: 1%;
   }
+ .text-4 {
+      z-index: 2;
+      top: 10px;
+      left: 1px;
+      font-size: 30px;
+  }
 }
+
 /*
 .four {
       margin-top: -400px;
