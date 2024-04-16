@@ -22,7 +22,7 @@ html, body {
             display: none;
       }
 }
-
+/*--------------- List of Font Families --------------- */
 @font-face {
       src: url(fonts/190reg.ttf);
       font-family: Mabry;
@@ -44,9 +44,26 @@ html, body {
 }
 
 @font-face {
-      src: url(fonts/Apercu.ttf);
-      font-family: Apercu;
+      src: url(fonts/Apercu Bold.otf);
+      font-family: ApercuBold;
 }
+
+@font-face {
+      src: url(fonts/Apercu Light Italic.otf);
+      font-family: ApercuLightIalic;
+}
+
+@font-face {
+      src: url(fonts/Apercu Light.otf);
+      font-family: ApercuLight;
+}
+
+@font-face {
+      src: url(fonts/Apercu Medium.otf);
+      font-family: ApercuMed;
+}
+
+
 
 /*--------------- navigation --------------- */
 nav {
@@ -209,7 +226,7 @@ li:active .here {
             visibility: hidden !important;
       }
 }
-/*-------------- footer */
+/*-------------- footer ----------------------*/
 .collab {
       text-align: right;
 }
@@ -246,6 +263,7 @@ li:active .here {
             padding: 0;
       }
 }
+
 
 /*-------------------- FITBUDDY  ------------ */
 .container{
@@ -357,8 +375,6 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FDEBB9 50%);
 .highlight2 {
 background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #EECCC2 50%);
 }
-
-
 
 .storyboard{
   width: 120%;
@@ -522,26 +538,105 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
 /*--------------------------NETWORK-----------------------*/
 
 .titL{
-  color: #E94E51;
-  font-size: 60px;
+  font-size: 50px;
 }
 .titL2{
   margin-top: -5%;
   color: #E94E51;
   font-size: 40px;
 }
+/* for the top header and textimg */
 .fdf{
-  border: 1px solid #F6891F;
+  width: 70%;
+  float: left;
+  margin: 10px;
+}
+.fdftext{
+  margin-top: 5%;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.fdftxt{
+  font-size:16px;
+  margin-left: 20px;
+}
+/* end the top header and text format */
+
+.highlightlgbt {
+  display: inline;
+  padding: .25em 0;
+  background: #FFC107;
+  color: #ffffff;
+  box-shadow: .5em 0 0 #FFC107, -.5em 0 0 #FFC107;
+}
+
+.x-callout {
+  border: solid transparent;
+  padding: 30px;
+  background-color: #ECECEC;
+  box-shadow: none;
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
+  border-bottom-right-radius: 10px; 
+  border-bottom-left-radius: 10px; 
+}
+.x-callout2 {
+  border: solid transparent;
+  padding: 30px;
+  background-color: #E1F0DB;
+  box-shadow: none;
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
+  border-bottom-right-radius: 10px; 
+  border-bottom-left-radius: 10px; 
+}
+.x-callout3 {
+  border: solid transparent;
+  padding: 20px;
+  background-color: #ECEBFC;
+  box-shadow: none;
+  border-top-left-radius: 5px; 
+  border-top-right-radius: 5px; 
+  border-bottom-right-radius: 5px; 
+  border-bottom-left-radius: 5px; 
+}
+
+.lgtbttxt1{
+  font-size: 25px;
+  font-family: ApercuBold, Mabry, sans-serif;
+}
+.lgbtcenter{
+  margin-left:15px;
 }
 .link2{
   color: #E94E51;
   font-size: 20px;
 }
 .txt5{
-  font-size: 30px;
+  font-size: 35px;
   margin-left: -10%;
-  color: #863292;
+  color:black;
+}
+.call-out-text {
+  flex 1;
+  width: 100%;
+  padding-left: 10px;
+  border-left: 5px solid blue;
 }
 
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 45%;
+  padding: 30px;
+  border-radius: 15px;
+  margin: 10px;
+ 
+}
 
-
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
