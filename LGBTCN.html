@@ -113,63 +113,41 @@
                 <li>How do we redesign the umbrella and local subsidiaries for better accessibility and smoother onboarding for volunteers and users? </li>
             </ul>  <br>
 
-
-          <div class="slideshow-container">
-
-          <div class="mySlides">
-            <div class="numbertext">1 / 5</div>
+        <center><p>Slideshow 1: Screenshots of the original website</p></center>
+        <div class="slideshow-container">
+          <div class="mySlides2">
             <img src="img/lgbt/lgweb1.png" style="width:100%">
-            <div class="text">Home Screen</div>
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">2 / 5</div>
+          <div class="mySlides2">
             <img src="img/lgbt/lgweb0.png" style="width:100%">
-            <div class="text">Intro</div>
           </div>
 
-           <div class="mySlides">
-            <div class="numbertext">3 / 5</div>
-            <img src="img/lgbt/lgweb3.png" style="width:100%">
-            <div class="text">Servics</div>
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">4 / 5</div>
+          <div class="mySlides2">
             <img src="img/lgbt/lgweb2.png" style="width:100%">
-            <div class="text">About</div>
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">5 / 5</div>
-            <img src="img/lgbt/lgweb5.png" style="width:100%">
-            <div class="text">Donate</div>
+          <div class="mySlides2">
+            <img src="img/lgbt/lgweb3.png" style="width:100%">
           </div>
 
-
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+          <div class="mySlides2">
+            <img src="img/lgbt/lgweb4.png" style="width:100%">
           </div>
-          <br>
 
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-            <span class="dot" onclick="currentSlide(4)"></span> 
-            <span class="dot" onclick="currentSlide(5)"></span> 
-          </div> 
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div> 
 
 
          <center><p class="figure">Fig.1. Original Home/Umbrella Site for the LGBTCN.</p></center>
-               <br><br><br>
+               <br><br>
         
         <p class= "para2 lgbtcenter">Fundamental problems we identified during our evaluation: </p>
 
          <ul class= "para2 lgbtcenter x-callout">
-            <li>Challenging navigation experience</li>
-            <li>Confusing website functionality and user journey </li>
+            <li>Challenging navigation experience</li><br>
+            <li>Confusing website functionality and user journey </li><br>
             <li>Difficulty and ambiguity in understanding website content and purpose </li>
          </ul>  
             <br><br>      
@@ -322,50 +300,7 @@
      <h1 class=" txt5"> <span class="highlightlgbt">Final Design Breakdown</span></h1> <br><br>
 </div>
 <div class="col-lg-10 center">
-    <style>
-    * {box-sizing: border-box}
-    .mySlides1, .mySlides2 {display: none}
-    img {vertical-align: middle;}
-
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
-    }
-
-    /* Next & previous buttons */
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a grey background color */
-    .prev:hover, .next:hover {
-      background-color: #f1f1f1;
-      color: black;
-    }
-    </style>
-    </head>
-    <body>
-
-
+    
     <center><p class="para2">Checkout the final prototyped designs for the LGBT Community Network in the slideshow: Umbrella & Local City Landing Pages, Resources Page, Events Page, Volunteer Page, & Donation Page! </p></center> <br>
     <div class="slideshow-container">
       <div class="mySlides1">
@@ -396,28 +331,6 @@
       <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
       <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
     </div>
-
-    <script>
-    let slideIndex = [1,1];
-    let slideId = ["mySlides1", "mySlides2"]
-    showSlides(1, 0);
-    showSlides(1, 1);
-
-    function plusSlides(n, no) {
-      showSlides(slideIndex[no] += n, no);
-    }
-
-    function showSlides(n, no) {
-      let i;
-      let x = document.getElementsByClassName(slideId[no]);
-      if (n > x.length) {slideIndex[no] = 1}    
-      if (n < 1) {slideIndex[no] = x.length}
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";  
-      }
-      x[slideIndex[no]-1].style.display = "block";  
-    }
-    </script>
             
       </div>
       <div class="whitespace"></div>
@@ -526,7 +439,70 @@
 
 
     </script>
- <!-- slide for top-->
+
+     <script>
+    let slideIndex = [1,1];
+    let slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+      let i;
+      let x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
+    </script>
+
+    <style>
+    * {box-sizing: border-box}
+    .mySlides1, .mySlides2 {display: none}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a grey background color */
+    .prev:hover, .next:hover {
+      background-color: #f1f1f1;
+      color: black;
+    }
+    </style>
+ <!-- slide for top--
     <script>
     var slideIndex = 1;
     showSlides(slideIndex);
