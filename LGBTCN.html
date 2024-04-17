@@ -305,7 +305,7 @@
 
     <!----------------------- Updated PRototype -------------------->
      <div class="whitespace"></div>
-        <div class="col-lg-9 center">
+        <div class="col-lg-9 center w3-container">
               
         <h1 class=" txt5"> <span class="highlightlgbt">Updated Prototypes</span></h1> <br><br>
         <p class="para2 lgbtcenter">Following our findings from our usability testing and client feedback, we began redeveloping our initial designs. This was aimed at bringing more intention to the umbrella site’s purpose vs. local chapters. While also highlighting features such as donations and information that had previously been communicated unclearly, aiming to make them more readily recognized and understood.</p> 
@@ -320,10 +320,108 @@
 <div class="whitespace"></div>
     <div class="col-lg-9 center">
      <h1 class=" txt5"> <span class="highlightlgbt">Final Design Breakdown</span></h1> <br><br>
-     <img src="img/lgbt/landing-frame.png" class="img"><br>
-
-
 </div>
+<div class="col-lg-10 center">
+    <style>
+    * {box-sizing: border-box}
+    .mySlides1, .mySlides2 {display: none}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a grey background color */
+    .prev:hover, .next:hover {
+      background-color: #f1f1f1;
+      color: black;
+    }
+    </style>
+    </head>
+    <body>
+
+
+    <center><p class="para2">Checkout the final prototyped designs for the LGBT Community Network in the slideshow: Umbrella & Local City Landing Pages, Resources Page, Events Page, Volunteer Page, & Donation Page! </p></center> <br>
+    <div class="slideshow-container">
+      <div class="mySlides1">
+        <img src="img/lgbt/landing-frame.png" style="width:100%">
+      </div>
+
+      <div class="mySlides1">
+        <img src="img/lgbt/landing-local.png" style="width:100%">
+      </div>
+
+      <div class="mySlides1">
+        <img src="img/lgbt/Resources-page.png" style="width:100%">
+      </div>
+
+      <div class="mySlides1">
+        <img src="img/lgbt/Events-calendar.png" style="width:100%">
+      </div>
+
+      <div class="mySlides1">
+        <img src="img/lgbt/get-involved.png" style="width:100%">
+      </div>
+
+      <div class="mySlides1">
+        <img src="img/lgbt/waystogive.png" style="width:100%">
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+
+    <script>
+    let slideIndex = [1,1];
+    let slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+      let i;
+      let x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
+    </script>
+            
+      </div>
+      <div class="whitespace"></div>
+
 
   <!--- Impact  ---
         <div class="whitespace"></div>
@@ -428,7 +526,7 @@
 
 
     </script>
-
+ <!-- slide for top-->
     <script>
     var slideIndex = 1;
     showSlides(slideIndex);
@@ -456,6 +554,8 @@
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
     }
-</script>
+</script> 
+
+
 </body>
 </html>
