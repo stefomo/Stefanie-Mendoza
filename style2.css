@@ -640,5 +640,17 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
   display: table;
   clear: both;
 }
+/* zoom in*/
+.click-zoom input[type=checkbox] {
+  display: none
+}
 
-  
+.click-zoom img {
+  transition: transform 0.25s ease;
+  cursor: zoom-in
+}
+
+.click-zoom input[type=checkbox]:checked~img {
+  transform: scale(1.5);
+  cursor: zoom-out
+}
