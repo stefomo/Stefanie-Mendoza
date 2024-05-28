@@ -567,8 +567,8 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
 }
 .box {
   float: left;
-  width: 30%;
-  padding: 10px;
+  margin-left: 1.5%;
+  margin-top: 3%;
   font-size: 1.3vw;
 }
 
