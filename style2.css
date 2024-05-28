@@ -9,6 +9,14 @@ html, body {
       color: #1E1E1E!important;
       box-sizing: border-box;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
 .whitespace {
       width: 100%;
       height: 100px;
@@ -386,12 +394,7 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #EECCC2 50%);
 	width: 15%;
 	float: left;
 }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-}
+
 .ph{
 	width: 30%;
 	display: block;
@@ -631,18 +634,10 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
   font-size: 25px;
   font-family: ApercuBold, Mabry, sans-serif;
 }
-/*
-.lgbtcenter{
-  margin-left:15px;
-}*/
+
 .link2{
   color: #E94E51;
   font-size: 20px;
-}
-.txt5{
-  font-size: 35px;
-  margin-left: -10%;
-  color:black;
 }
 .call-out-text {
   flex 1;
@@ -726,7 +721,6 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
 /* on Mobile */
 @media screen and (max-width: 550px) {
   .featured-image {
-    width: 90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -751,7 +745,7 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
   margin-top: 10%;
   }
   .para1{
-  font-size: 12px;
+  font-size: 13px;
   font-family: Apercu, Mabry, sans-serif;
 }
   .para2{
