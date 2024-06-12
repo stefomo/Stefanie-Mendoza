@@ -490,7 +490,7 @@ margin-bottom: 5%;
 /*--------------------------INSU-----------------------*/
 .titI{
   color: #41948E;
-  font-size: 90px;
+  font-size: 70px;
 }
 .titI2{
   margin-top: -5%;
@@ -525,8 +525,8 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
   font-size: 14px;
 }
 .quotes{
-  color: #41948E;
-  font-size: 19px;
+  color: #12486B; /*#41948E;*/
+  font-size: 20px;
   font-style: italic;
 }
 .pp{
@@ -568,7 +568,7 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
 .box {
   float: left;
   margin-left: 1.2%;
-  margin-top: 3%;
+  margin-top: 2%;
   font-size: 1.3vw;
 }
 
@@ -602,7 +602,7 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
 .x-callout {
   border: solid transparent;
   padding: 30px;
-  background-color: #ECECEC;
+  background-color: #EFEFEF;
   box-shadow: none;
   border-top-left-radius: 10px; 
   border-top-right-radius: 10px; 
@@ -755,3 +755,4 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%,  #41948E 50%);
    text-decoration: underline;
   }
 }
+
