@@ -388,6 +388,9 @@ background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FDEBB9 50%);
 .highlight2 {
 background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #EECCC2 50%);
 }
+.highlight3 {
+background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #E8F7FF 100%);
+}
 
 .storyboard{
   width: 120%;
@@ -623,6 +626,17 @@ margin-bottom: 5%;
   border-bottom-right-radius: 5px; 
   border-bottom-left-radius: 5px; 
 }
+.x-callout4 {
+  border: solid transparent;
+  padding: 10px;
+  background-color: #EFEFEF;
+  box-shadow: none;
+  border-top-left-radius: 1px; 
+  border-top-right-radius: 1px; 
+  border-bottom-right-radius: 1px; 
+  border-bottom-left-radius: 1px; 
+}
+
 
 .lgtbttxt1{
   font-size: 25px;
@@ -708,4 +722,76 @@ margin-bottom: 5%;
    text-decoration: underline;
   }
 }
+/*---------_DEXCOM--------------*/
+.titledex{
+  color: #202D6B;
+}
+.nda{
+  font-weight: bold;
+  color:#56A944;
+  font-size: 23px;
+  text-align: center;
+}
+.blur{
+  filter: blur(2px);
+}
+.half-line {
+  line-height: 2.5em;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color:#E8F7FF;  
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-radius: 10px 10px 0px 0px;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
 
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #d1cfcf;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 18px 18px;
+  display: none;
+  font-size: 20px;
+  overflow: hidden;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #E8F7FF;
+
+}
+/* ----quote bubble---- */
+.bubble {
+  --r: 1em;  /* the radius */
+  --t: 1.5em; /* the size of the tail */
+  
+  max-width: 500px;
+  padding: 1em;
+  border-inline: var(--t) solid #0000;
+  border-radius: calc(var(--r) + var(--t))/var(--r);
+  mask: 
+    radial-gradient(100% 100% at var(--_p) 0,#0000 99%,#000 102%) 
+      var(--_p) 100%/var(--t) var(--t) no-repeat,
+    linear-gradient(#000 0 0) padding-box;
+  background: linear-gradient(9deg, rgba(183,233,207,1) 2%, rgba(192,216,226,1) 60%) border-box;
+  color: #202D6B;
+  font-size: 18px;
+}
+.left {
+  --_p: 0;
+  border-bottom-left-radius: 0 0;
+  place-self: start;
+}
+.right {
+  --_p: 100%;
+  border-bottom-right-radius: 0 0;
+  place-self: end;
+}
+
+/* -----end of  quote bubble----- */

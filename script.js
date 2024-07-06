@@ -1,3 +1,4 @@
+$(this).corner();
 var hoverEffect = function (opts) {
   var vertex = `
         varying vec2 vUv;
@@ -187,3 +188,4 @@ var myAnimation = new hoverEffect({
   image1: 'https://res.cloudinary.com/dk5kblf1w/image/upload/v1597134566/Frame_6_yhdmjs.png',
   image2: 'https://res.cloudinary.com/dk5kblf1w/image/upload/v1597134744/Frame_7_j5mjpn.png',
   displacementImage: 'https://res.cloudinary.com/dk5kblf1w/image/upload/v1596015774/qwq_cl7r1o.png' });
+
