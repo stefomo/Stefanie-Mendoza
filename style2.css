@@ -795,3 +795,10 @@ margin-bottom: 5%;
 }
 
 /* -----end of  quote bubble----- */
+@media(max-width: 768px) {
+  .bubble {
+  font-size: 14px;
+}
+  .img3{
+    width: 100%;
+  }
