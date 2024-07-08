@@ -26,11 +26,6 @@ html, body {
       height: 50px;
 }
 
-@media(max-width: 768px) {
-      .whitespace {
-            display: none;
-      }
-}
 /*--------------- List of Font Families --------------- */
 @font-face {
       src: url(fonts/190reg.ttf);
@@ -575,7 +570,14 @@ margin-bottom: 5%;
   display: table;
 
 }
-
+@media(max-width: 768px) {
+     .highlightlgbt{
+      font-size: 25px;
+     }
+     .titledex{
+      font-size: 30px;
+  }
+}
 /* on PC */
 @media screen and (min-width: 550px) {
   .featured-image {
