@@ -25,7 +25,10 @@ html, body {
       width: 100%;
       height: 50px;
 }
-
+.ndacolor{
+    color: #828282;
+    font-size: 17px;
+  }
 /*--------------- List of Font Families --------------- */
 @font-face {
       src: url(fonts/190reg.ttf);
@@ -821,3 +824,4 @@ margin-bottom: 5%;
   .img3{
     width: 100%;
   }
+}
