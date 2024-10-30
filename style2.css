@@ -320,7 +320,11 @@ hr{
 }
 .para2{
   font-size: 19px;
-  font-family: Apercu, Mabry, sans-serif;
+  font-family: Apercu light, Mabry, sans-serif;
+}
+.para5{
+  font-size: 19px;
+  font-family: Apercu Medium, Mabry, sans-serif;
 }
 .para3{
   font-size: 14px;
@@ -744,6 +748,11 @@ margin-bottom: 5%;
    text-decoration: underline;
   }
 }
+  .title2{
+    color: #A6A6A6;
+    font-family:fonts/Apercu Bold.otf;
+    font-size: 2.25em;
+  }
 /*---------_DEXCOM--------------*/
 .titledex{
   color: #202D6B;
