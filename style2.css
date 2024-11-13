@@ -322,9 +322,13 @@ hr{
   font-size: 19px;
   font-family: Apercu light, Mabry, sans-serif;
 }
-.para5{
+.para5{ /* dark bold*/
   font-size: 19px;
   font-family: Apercu Medium, Mabry, sans-serif;
+}
+.para6{ /*normal bold*/
+  font-size: 19px;
+  font-family: Apercu, Mabry, sans-serif;
 }
 .para3{
   font-size: 14px;
@@ -333,6 +337,10 @@ hr{
 .para4{
   font-size: 18px;
   font-family: Apercu, Mabry, sans-serif;
+}
+.para7{
+  font-size: 18px;
+  font-family: Apercu light, Mabry, sans-serif;
 }
 .ls li{
   font-size: 17px;
@@ -744,14 +752,15 @@ margin-bottom: 5%;
   .para2{
   font-size: 15px;
   }
+
   .strong{
    text-decoration: underline;
   }
 }
   .title2{
-    color: #A6A6A6;
+    color: #9A9A9A;
     font-family:fonts/Apercu Bold.otf;
-    font-size: 2.25em;
+    font-size: 2.2em;
   }
 /*---------_DEXCOM--------------*/
 .titledex{
