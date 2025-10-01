@@ -40,11 +40,13 @@
 
       <div class="wrapper section.bg">
 
-            <!--------------- navbar --------------->
+      <!--------------- navbar --------------->
    <nav>
      <a href="https://stefaniemendoza.com">
        <ul id="menu">
-       <li> <a href="https://stefaniemendoza.com">Designs</a> <span class="here"> -> </span> </li>
+       <!--<li><a href="https://stefaniemendoza.com/about">Stefanie Mendoza</a> </li>-->
+       <li> <a href="#work" onclick="event.preventDefault(); document.getElementById('work').scrollIntoView({behavior: 'smooth', block:'center'})"> Designs <span class="here"> -> </span></a> 
+
        <li><a href="https://stefaniemendoza.com/about">About</a> <span class="extra"> -> </span> </li>
        <li><a href="Stefanie_Mendoza.pdf" target="_blank" >Resume</a> <span class="extra"> -> </span> </li>
       </ul>
@@ -67,88 +69,141 @@
       <!--------------- projects ---------------------->
       <div class="container-fluid">  <br><br><br> 
                <div class="whitespace2"></div>
-            <h2 class="wow fadeInUp" style=" color:#4c4770;" data-wow-delay="1s"><center>Projects</center></h2>
+            <h2 class="wow fadeInUp" style=" color:#4c4770; font-family: apercu;" data-wow-delay="1s"><center>Case Studies</center></h2>
             
 
        <div class="whitespace"></div> 
 
-      <!-------------- DDI------------------->
-
-      <div class="whitespace"></div> 
-            <div class="container">
-            <div class="row">
-
-                  <div class="col-lg-4 img one wow fadeInUp" data-wow-delay="1.5s" onclick="location.
-                  href ='https://stefaniemendoza.com/DDI'">
-                       <img src="img/homeindex/ddifront.png" class="itwo" alt="example image of website"
-                         onmouseover="this.src='img/homeindex/ddiwhite.png';"
-                         onmouseout="this.src='img/homeindex/ddifront.png';"> </div>
-
-                  <div class="col-lg-6 txt text-1 wow fadeInUp" data-wow-delay="0.5s">
-                        <p onclick="location.href='https://stefaniemendoza.com/DDI'">InsuLearn 
-                              <br></p> </div>
-            </div>
-      </div>
-      <div class="whitespace"></div> 
-
-         <!--- Dexcom----->
-             <div class="container">
-            <div class="row">
-                  <div class="col-lg-4 img two wow fadeInUp" data-wow-delay="0.5s" onclick="location.href='https://stefaniemendoza.com/Dexcom'">
-                       <img src="img/homeindex/dexcomfront.png" class="" alt="photo of website"
-                        onmouseover="this.src='img/homeindex/dexcomwhite.png';"
-                        onmouseout="this.src='img/homeindex/dexcomfront.png';"> </div>
-                   
-
-                        <div class="col-lg-7 txt text-4">
-                         <p onclick="location.href='https://stefaniemendoza.com/Dexcom'">Dexcom <br></p> </div>
-
-                  </div>
-            </div>
-
-        <!-- LGBT CN---->
-            <div class="container">
-            <div class="row">
-
-                  <div class="col-lg-4 img one wow fadeInUp" data-wow-delay="1.5s" onclick="location.href='https://stefaniemendoza.com/LGBTCN'">
-                        <img src="img/homeindex/lgbtfront.png" class="" alt="photo of website"
-                        onmouseover="this.src='img/homeindex/lgbtwhite.png';"
-                        onmouseout="this.src='img/homeindex/lgbtfront.png';"> </div>
-                   
-
-                  <div class="col-lg-8 txt text-1 wow fadeInUp" data-wow-delay="0.5s">
-                        <p onclick="location.href='https://stefaniemendoza.com/LGBTCN'">LGBT Community Network </p> </div>
-            </div>
-      </div>
-  <div class="whitespace"></div> 
-       <!-- Rutina----->
-
-             <div class="container">
-            <div class="row">
-                  <div class="col-lg-4 img two wow fadeInUp" data-wow-delay="0.5s" onclick="location.href='https://stefaniemendoza.com/Rutina'">
-                        <img src="img/homeindex/rutinawhite.png" class="itwo" alt="example image of prototype"
-                         onmouseover="this.src='img/homeindex/rutinafront.png';"
-                         onmouseout="this.src='img/homeindex/rutinawhite.png';"> </div>
-
-                        <div class="col-lg-5 txt text-4">
-                         <p onclick="location.href='https://stefaniemendoza.com/Rutina'">Rutina</p> </div>
-                  </div>
-            </div>
-
-            <!--- Fitbuddy ---->
-            <div class="whitespace3"></div>
-            <div class="container">
-                  <div class="row">
-                        <div class="col-lg-4 img three wow fadeInUp" data-wow-delay="0.5s" onclick="location.href='https://stefaniemendoza.com/FitBuddy'">
-                              <img src="img/03.png" class="three" alt="example image of prototype"> </div>
-                  <div class="col-lg-4 txt text-2">
-                         <p onclick="location.href='https://stefaniemendoza.com/FitBuddy'">Fitbuddy</p> </div>
-            
-                  </div>
-            </div>
+      <!----------------- DDI-------------------->
+      
       <div class="whitespace"></div>
+      <div class="container">
+            <div class="row" id="work">
+                  <div class="col-lg-5 one wow fadeInUp image" data-wow-delay="1s"
+                       onclick="location.href='https://stefaniemendoza.com/DDI'">
+                        <img id="ddi-img" src="img/homeindex/ddifront.png" alt="Insulearn website"
+                                                onmouseover="this.src='img/homeindex/ddiwhite.png';"
+                                                onmouseout="this.src='img/homeindex/ddifront.png';">       
+                  </div>
+                  <div class="col-lg-7 one txt text-1 wow fadeInUp d-flex align-items-center text" data-wow-delay="1s">
+                        <p class="mb-0" onclick="location.href='https://stefaniemendoza.com/DDI'">
+                              <span class="title">Insulearn</span>
+                              <span class="pill">UX/UI Design • Web App • User Research</span><br>
+                              Interactive Diabetes Education Platform<br>
+                        </p>
+                  </div>
+            </div>
       </div>
 
+      <div class="whitespace"></div> 
+      <div class="whitespace"></div> 
+
+        
+    <!----  <div class="whitespace"></div>
+      <div class="container">
+            <div class="row" id="work">
+                  <div class="col-lg-5 one wow fadeInUp" data-wow-delay="1s"
+                       onclick="location.href='https://stefaniemendoza.com/DDI'">
+                        <img id="ddi-img" src="img/homeindex/ddifront.png" alt="Insulearn website"
+                                                onmouseover="this.src='img/homeindex/ddiwhite.png';"
+                                                onmouseout="this.src='img/homeindex/ddifront.png';">       
+                  </div>
+                  <div class="col-lg-7 one txt text-1 wow fadeInUp d-flex align-items-center" data-wow-delay="1s">
+                        <p class="mb-0" onclick="location.href='https://stefaniemendoza.com/DDI'">
+                              <span class="title">Insulearn</span>
+                              <span class="pill">UX/UI Design • Web App • User Research</span><br>
+                              Interactive Diabetes Education Platform<br>
+                        </p>
+                  </div>
+            </div>
+      </div>
+
+      <div class="whitespace"></div> 
+      <div class="whitespace"></div> -->
+ 
+<!------- Dexcom ------->
+
+ <div class="container">
+            <div class="row" id="work">
+                  <div class="col-lg-5 one wow fadeInUp" data-wow-delay="1s"
+                       onclick="location.href='https://stefaniemendoza.com/Dexcom'">
+                        <img id="ddi-img" src="img/homeindex/dexcomwhite.png" alt="App Mockup"
+                                                onmouseover="this.src='img/homeindex/dexcomwhite.png';"
+                                                onmouseout="this.src='img/homeindex/dexcomfront.png';">       
+                  </div>
+                  <div class="col-lg-7 one txt text-1 wow fadeInUp d-flex align-items-center" data-wow-delay="1s">
+                        <p class="mb-0" onclick="location.href='https://stefaniemendoza.com/Dexcom'">
+                              <span class="title">Dexcom</span>
+                              <span class="pill">User Research • UX/UI Design</span><br>
+                              Enhancing gestational diabetes care with CGM insights<br>
+                        </p>
+                  </div>
+            </div>
+      </div>
+
+ <!------- LGBT CN -------->
+    <div class="whitespace"></div>
+      <div class="container">
+            <div class="row" id="work">
+                  <div class="col-lg-5 one wow fadeInUp image" data-wow-delay="1s"
+                       onclick="location.href='https://stefaniemendoza.com/LGBTCN'">
+                        <img id="ddi-img" src="img/homeindex/lgbtwhite.png" alt="Website Preview"
+                                                onmouseover="this.src='img/homeindex/lgbtwhite.png';"
+                                                onmouseout="this.src='img/homeindex/lgbtfront.png';">      
+                  </div>
+                  <div class="col-lg-7 one txt text-1 wow fadeInUp d-flex align-items-center text" data-wow-delay="1s">
+                        <p class="mb-0" onclick="location.href='https://stefaniemendoza.com/LGBTCN'">
+                              <span class="title">Develop For Good</span>
+                              <span class="pill">UX/UI Design • Web Deisgn</span><br>
+                              Redesigned the LGBT Community Network's website for impact<br>
+                        </p>
+                  </div>
+            </div>
+      </div>
+
+      <div class="whitespace"></div> 
+      <div class="whitespace"></div> 
+           
+<!--------- Rutina-----
+<div class="container">
+            <div class="row" id="work">
+                  <div class="col-lg-5 one wow fadeInUp" data-wow-delay="1s"
+                       onclick="location.href='https://stefaniemendoza.com/Rutina'">
+                        <img id="ddi-img" src="img/homeindex/rutinawhite.png" alt="App Mockup"
+                                               onmouseover="this.src='img/homeindex/rutinafront.png.png';"
+                                               onmouseout="this.src='img/homeindex/rutinawhite.pn.png';">       
+                  </div>
+                  <div class="col-lg-7 one txt text-1 wow fadeInUp d-flex align-items-center" data-wow-delay="1s">
+                        <p class="mb-0" onclick="location.href='https://stefaniemendoza.com/Rutina'">
+                              <span class="title">Rutina</span>
+                              <span class="pill">Mobile App • UX/UI Design</span><br>
+                              Building routine and social connection in an app<br>
+                        </p>
+                  </div>
+            </div>
+      </div>
+
+      <div class="whitespace"></div> 
+      <div class="whitespace"></div> 
+
+       <!--- Fitbuddy ---->            
+
+      <div class="container">
+            <div class="row align-items-center" id="work">
+                  <div class="col-lg-5 one wow fadeInUp d-flex justify-content-center" data-wow-delay="1s"
+                       onclick="location.href='https://stefaniemendoza.com/FitBuddy'">
+                        <img id="ddi-img" src="img/03.png" alt="example image of prototype">
+                                     
+                  </div>
+                  <div class="col-lg-7 txt text-1 wow fadeInUp d-flex align-items-center text" data-wow-delay="1s">
+                        <p class="mb-0" onclick="location.href='https://stefaniemendoza.com/FitBuddy'">
+                              <span class="title">Fitbuddy</span>
+                              <span class="pill">UX/UI Design • App Deisgn</span><br>
+                              Fostering fitness and connection through a social app<br>
+                        </p>
+                  </div>
+            </div>
+      </div>
  
  
             <!--------------- footer starts here --------------->
@@ -159,7 +214,7 @@
                         <div class="collab">
                               <div class="row">
                                     <div class="col-lg-12">
-                                          <h5 class="wow fadeInUp"> ☻ Thanks For Viewing ☻ </h5>
+                                          <h5 class="wow fadeInUp">Thanks for scrolling 👋</h5>
                                     </div>
                               </div>
                         </div>
@@ -174,7 +229,7 @@
                               <div class="row">
 
                                     <div class="col-lg-12" id="address">
-                                          <p class="wow fadeInUp" data-wow-delay="0.2s"><img src ="img/hello.png" class="hello" alt="eyes"/>&nbsp Contact &nbsp -><a href = "mailto:stefvm001@gmail.com" style="color:black"> &nbsp ✉ Email </a> <a href="https://www.linkedin.com/in/stefanie-m-3b4832183/" target="_blank" style="color:black"> &nbsp -> linkedin</a></p>
+                                          <p class="wow fadeInUp" data-wow-delay="0.2s"><img src ="img/hello.png" class="hello" alt="eyes"/>&nbsp Leave me a note  &nbsp<a href = "mailto:stefvm001@gmail.com" style="color:black"> &nbsp Email↗ </a> <a href="https://www.linkedin.com/in/stefanie-m-3b4832183/" target="_blank" style="color:black"> &nbsp linkedin↗</a></p>
                                         
                                     
                                     <div class="col-lg-3" id="personal">
@@ -194,7 +249,7 @@
       </div>
 </div>
 
-            <!-- partial -->
+      <!-- partial ---->
       <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/96/three.min.js'></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
       <script  src="./script.js"></script>
@@ -245,52 +300,7 @@
 
       </script>
 
-      <script type="text/javascript">
-      ClipRRect(
-      borderRadius: BorderRadius.circular(8.0),
-      child: Image.network(
-        subject['images']['large'],
-        height: 150.0,
-        width: 100.0,
-    ),
-)
 
-      var image = document.getElementsByClassName('ione');
-      new simpleParallax(image, {
-            scale: 1.3
-      });
-
-      var image = document.getElementsByClassName('itwo');
-      new simpleParallax(image, {
-            scale: 1.6,
-            orientation: 'left'
-      });
-
-      var image = document.getElementsByClassName('ithree');
-      new simpleParallax(image, {
-            scale: 1.6,
-            orientation: 'right'
-      });
-
-      var image = document.getElementsByClassName('ifour');
-      new simpleParallax(image, {
-            scale: 1.6,
-      });
-
-      var image = document.getElementsByClassName('ifive');
-      new simpleParallax(image, {
-            scale: 1.6,
-            orientation: 'right'
-      });
-
-      var image = document.getElementsByClassName('isix');
-      new simpleParallax(image, {
-            scale: 1.6,
-            orientation: 'left'
-      });
-
-
-      </script>
 
 </body>
 </html>

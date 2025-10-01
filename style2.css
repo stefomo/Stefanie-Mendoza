@@ -51,23 +51,23 @@ html, body {
 }
 
 @font-face {
-      src: url(fonts/Apercu Bold.otf);
-      font-family: ApercuBold;
+      font-family: "ApercuBold";
+      src: url("fonts/Apercu Bold.otf") format("opentype");
 }
 
 @font-face {
-      src: url(fonts/Apercu Light Italic.otf);
-      font-family: ApercuLightIalic;
+      font-family: "ApercuLightItalic";
+      src: url("fonts/Apercu Light Italic.otf") format("opentype");
 }
 
 @font-face {
-      src: url(fonts/Apercu Light.otf);
-      font-family: ApercuLight;
+      font-family: "Apercu Light";
+      src: url("fonts/Apercu Light.otf") format("opentype");
 }
 
 @font-face {
-      src: url(fonts/Apercu Medium.otf);
-      font-family: ApercuMed;
+      font-family: "ApercuMed";
+      src: url("fonts/Apercu Medium.otf") format("opentype");
 }
 
 

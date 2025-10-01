@@ -44,6 +44,11 @@ html, body {
       src: url(fonts/Andale-Mono.ttf);
       font-family: Andale;
 }
+@font-face {
+      font-family: "Apercu Light";
+      src: url("fonts/Apercu Light.otf") format("opentype");
+}
+
 
 /*--------------- navigation --------------- */
 nav {

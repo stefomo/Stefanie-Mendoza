@@ -3,7 +3,7 @@
 html, body {
       margin: 0;
       padding: 0;
-      font-family: Mabry !important;
+      font-family: "Mabry" !important;
       background-image: url("img/test.png");
       background-size: auto 100%;
       background-size: cover;
@@ -42,10 +42,12 @@ html, body {
       }
 }
 
+/*--------------- fonts --------------- */
 @font-face {
       src: url(fonts/190reg.ttf);
       font-family: Mabry;
 }
+
 
 @font-face {
       src: url(fonts/opp180reg.ttf);
@@ -59,6 +61,16 @@ html, body {
 @font-face {
       src: url(fonts/Apercu.ttf);
       font-family: Apercu
+}
+
+@font-face {
+      font-family: "Apercu Light";
+      src: url("fonts/Apercu Light.otf") format("opentype");
+}
+
+@font-face {
+      font-family: "ApercuMed";
+      src: url("fonts/Apercu Medium.otf") format("opentype");
 }
 
 
@@ -84,7 +96,7 @@ nav {
       position: fixed;
       z-index: 1;
       font-size: 18px;
-      font-family: Mabry, serif;
+      font-family: Apercu, serif;
 }
 
 nav #menu {
@@ -102,7 +114,7 @@ nav #menu li {
 }
 /* color for nav bar */
 nav #menu li a {
-      color: #35396e;
+      color: #302A55;
 }
 
 nav #menu li a:hover {
@@ -242,28 +254,98 @@ li:active .here {
 
 /*--------------- before section --------------- */
 /*--------------- projects section --------------- */
-.container{
-      width: 100%;
-
-}
 
 img {
       width: 100%;
 }
 
-.txt {
-      display: flex; 
-      align-items: center; 
-      justify-content: center; 
-      position: relative;
-      padding-left: 10% ;
-      color:#4c4770;
+/*----------------- project text --------------------*/
+*/
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between text and image */
 }
 
-.text-1 {
-      font-size: 50px;
+/* Desktop: text left, image right */
+.text {
+  order: 1;
+}
+.image {
+  order: 2;
+}
+/* Mobile: stack vertically with image above text */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .text {
+    order: 2;
+    margin: 0px 0px 40px 4px;;
+  }
+  .image {
+    order: 1;
+    width: 100%; /* optional: make image full width */
+  }
+    /* Optional: make headings smaller too */
+  .text h2 {
+    font-size: 1.2rem;
+  }
+  .text p {
+    font-size: 1.6rem;
+  }
+}
+/*------- text ------*/
+#work {
+  scroll-margin-top: 5vh;
+}
+
+.txt {
+      padding-left: 15% ;
+      color: #302A55;
+      font-family: Apercu;
+}
+
+.title /*for project names like insulearn*/{
+      font-size: 24px;
+      color:#6F80FF;
+      font-family: Apercu;
+}
+
+
+.pill {
+            background: transparent;
+            color: #4c4770;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border: 1px solid;
+            border-color: #6F80FF;
+            color: #6F80FF;
+            vertical-align: middle;
+        }
+
+.text-1 /*name title*/ {
+      font-size: 30px;
       right: 100px;
 }
+/*insulearn*/
+.one:hover, .text-1:hover{
+ cursor: pointer;
+}
+.one:hover ~ .text-1{
+  color: #9EA5BD;;
+}
+.text-1:hover{
+  color: #9EA5BD;
+}
+
+/* ------------- end of project text--------------- */
+
+
 .text-2 {
       z-index: 2;
       top: -150px;
@@ -282,67 +364,6 @@ img {
       font-size: 70px;
 }
 
-
-/*insulearn*/
-.one:hover, .text-1:hover{
- cursor: pointer;
-}
-.one:hover ~ .text-1{
-  color: #90BBC1;
-}
-.text-1:hover{
-  color: #90BBC1;
-}
-
-/*rutina*/
-.two{
-  margin-left: 65%;
-
-}
-.two:hover{
-    cursor: pointer;
-}
-.two:hover ~ .text-2 {
-   color: #9DD7EA;
-}
-.text-2:hover{
-   color: #9DD7EA;
-  cursor: pointer;
-}
-
-
-/*lgbt*/
-}
-.four:hover{
-    cursor: pointer;
-}
-.four:hover ~ .text-4 {
-   color: #ED9B72;
-}
-.text-4:hover{
-   color: #41948E;
-  cursor: pointer;
-}
-
-
-/*rutina*/
-.three {
-      z-index: 2;
-      top: -20px;
-}
-.text-3:hover {
-  color: #ED9B72;
-  cursor: pointer;
-}
-.three:hover{
-    -webkit-filter:none ;/* Chrome, Safari, Opera */
-    filter: grayscale(0%);
-    cursor: pointer;
-}
-
-.three:hover ~ .text-3{
-   color: #ED9B72;
-}
 
 @media(max-width: 768px) {
  .text-1 {
