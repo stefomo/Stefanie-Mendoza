@@ -29,6 +29,7 @@ html, body {
     color: #828282;
     font-size: 17px;
   }
+
 /*--------------- List of Font Families --------------- */
 @font-face {
       src: url(fonts/190reg.ttf);
@@ -272,6 +273,7 @@ li:active .here {
 }
 
 
+
 /*-------------------- FITBUDDY  ------------ */
 .container{
   width: 100%;
@@ -511,6 +513,7 @@ margin-bottom: 5%;
   border-bottom-right-radius: 10px; 
   border-bottom-left-radius: 10px; 
 }
+
 .x-callout6 {
   border: solid transparent;
   padding: 10px;
@@ -528,6 +531,9 @@ margin-bottom: 5%;
   color: #41948E;
   font-size: 50px;
 }
+.tit3{
+  font-size: 50px;
+}
 .titI2{
   margin-top: -5%;
   font-size: 30px;
@@ -538,7 +544,6 @@ margin-bottom: 5%;
   margin-left: -5%;
 }
 .link1{
-  color: #41948E;
   font-size: 20px;
 }
 .link1:hover{
@@ -753,6 +758,7 @@ margin-bottom: 5%;
   font-size: 15px;
   }
 
+  
   .strong{
    text-decoration: underline;
   }
